@@ -1,0 +1,63 @@
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.swiper-wrapper{
+  height:100%;
+}
+
+.swiper-slide {
+    text-align: center;
+  	margin-right:auto;
+  	margin-left:auto;
+    background-color: #FFF;
+}
+
+.img-top{
+	vertical-align: bottom;
+}
+.img-knob{
+	vertical-align: top;
+}
+
+#club-body-swiper{
+	
+}
+
+#club-grip-swiper{
+  height:100%;
+	
+}
+
+#club-knob-swiper{
+	vertical-align: top;
+}
+
+#club-swiper{
+	background-color: #FFF;
+
+}
+
+.club-pics{
+  width:33%;
+}
+
+/*#img-club-top{
+  width: 250px;
+}
+#img-club-body{
+  width: 450px;
+}
+#img-club-tape{
+  width: 175px;
+}
+#img-club-grip{
+  width: 250px;
+}
+#img-club-knob{
+  width: 175px;
+}*/
