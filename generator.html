@@ -37,8 +37,10 @@
     <!-- Page Content  -->
     <div id="page_body">
       <div class="container">
-          <div id="club_window" class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
-          </div>
+          <!-- platz abstand -->
+          <!--<div id="club_window" class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+          </div> -->
+          <div id="club_window"> </div>
         </div>
       </div>
     </div> <!-- /container -->
@@ -64,7 +66,7 @@
 
           var dir = "http://ephtron.de/henrys-dev/club-parts/clubs-";
           var fileextension = ".gif";
-          var colors = ["blau", "gruen", "rot"];
+          var colors = ["blau"]; //, "gruen", "rot"];
           colors.forEach(function(item){
             var final_url = dir+club_part+"/"+club_part+"-"+item+fileextension;
             //var _div = document.createElement("div");
@@ -75,22 +77,20 @@
             //wrap_swip.appendChild(_div);
             //wrap_swip.append("<img src='" + dir + filename + "'>");
             //wrap_swip.append('<div class="swiper-slide"><img src="'+ final_url +'"/></div>');
-            $(wrap_swip).append('<div class="swiper-slide"><img id="img-club-'+club_part+'" class="club-pics center-block" src="'+ final_url +'"/></div>');
+            $(wrap_swip).append('<div class="swiper-slide"><img id="img-club-'+club_part+'" class="club-pics img-responsive center-block" src="'+ final_url +'"/></div>');
           });
 
-          console.log("4")
-
-          var page_swip = document.createElement("div");
-          page_swip.className = "swiper-"+club_part+"-pagination";
-          var next_swip = document.createElement("div");
-          next_swip.className = "swiper-"+club_part+"-button-next swiper-button-next";
-          var prev_swip = document.createElement("div");
-          prev_swip.className = "swiper-"+club_part+"-button-prev swiper-button-prev";
+          //var page_swip = document.createElement("div");
+          //page_swip.className = "swiper-"+club_part+"-pagination";
+          //var next_swip = document.createElement("div");
+          //next_swip.className = "swiper-"+club_part+"-button-next swiper-button-next";
+          //var prev_swip = document.createElement("div");
+          //prev_swip.className = "swiper-"+club_part+"-button-prev swiper-button-prev";
 
           swip.appendChild(wrap_swip);
-          swip.appendChild(page_swip);
-          swip.appendChild(next_swip);
-          swip.appendChild(prev_swip);
+          //swip.appendChild(page_swip);
+          //swip.appendChild(next_swip);
+          //swip.appendChild(prev_swip);
           $(club_window).append(row);
           console.log("5")
       }
@@ -162,9 +162,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!--<script src="../../dist/js/bootstrap.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
 
   </body>
 </html>
