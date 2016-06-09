@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Henrys Keulengenerator</title>
+
+    <!-- Own Stylesheet -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="EphTron">
+    <meta charset="UTF-8">
+
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:regular&amp;subset=latin"/>
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arvo:regular&amp;subset=latin"/>
+
+    <!-- Own Stylesheet 
+    <link href="ephtron-stylesheet.css" rel="stylesheet" type="text/css">-->
+    <link href="club-stylesheet.css" rel="stylesheet" type="text/css">
+
+    <!-- Swiper Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.0/css/swiper.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.min.js"></script>-->
+    <!-- Page Content  -->
+    <div id="page_body">
+      <div id="club_window"> </div>
+    </div>
+    
+
+    <script type="text/javascript">
+      function create_club_part(club_part ,name_id){
+          var row = document.createElement("div");
+          row.className = "row";
+
+          var col = document.createElement("div");
+          col.id = name_id;
+          row.appendChild(col);
+
+          var swip = document.createElement("div"); // swip_container
+          swip.className = "swiper-container swiper-container-"+club_part;
+          col.appendChild(swip);
+
+          var wrap_swip = document.createElement("div");
+          wrap_swip.className = "swiper-wrapper";
+          wrap_swip.id = "club-"+club_part+"-swiper";
+
+          var dir = "http://ephtron.de/henrys-dev/club-parts/clubs-";
+          var fileextension = ".gif";
+          var colors = ["blau"]; //, "gruen", "rot"];
+          colors.forEach(function(item){
+            var final_url = dir+club_part+"/"+club_part+"-"+item+fileextension;
+            $(wrap_swip).append('<div class="swiper-slide"><img id="img-club-'+club_part+'" class="club-pics" src="'+ final_url +'"/></div>');
+          });
+
+          //var page_swip = document.createElement("div");
+          //page_swip.className = "swiper-"+club_part+"-pagination";
+          //var next_swip = document.createElement("div");
+          //next_swip.className = "swiper-"+club_part+"-button-next swiper-button-next";
+          //var prev_swip = document.createElement("div");
+          //prev_swip.className = "swiper-"+club_part+"-button-prev swiper-button-prev";
+
+          swip.appendChild(wrap_swip);
+          //swip.appendChild(page_swip);
+          //swip.appendChild(next_swip);
+          //swip.appendChild(prev_swip);
+          $(club_window).append(row);
+          console.log("5")
+      }
+    </script>
+    <script type="text/javascript">
+      create_club_part("knob","club-knob");
+      create_club_part("grip","club-grip");
+      create_club_part("tape","club-tape");
+      create_club_part("body","club-body");
+      create_club_part("top","club-top");
+    </script>
+
+
+    <!-- Init Swiper Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.0/js/swiper.min.js"></script>
+    <script>        
+      var swiper_top = new Swiper ('.swiper-container-top', {
+        // Optional parameters
+        //direction: 'vertical',
+        slidesPerView:1,
+        loop: true,
+        centeredSlides: true,
+        
+        // If we need pagination
+        //pagination: '.swiper-top-pagination',
+        
+        // Navigation arrows
+        nextButton: '.swiper-top-button-next',
+        prevButton: '.swiper-top-button-prev'
+        
+        // And if we need scrollbar
+        //scrollbar: '.swiper-scrollbar',
+      })
+      var swiper_body = new Swiper ('.swiper-container-body', {
+        slidesPerView:1,
+        loop: true,
+        // Navigation arrows
+        nextButton: '.swiper-body-button-next',
+        prevButton: '.swiper-body-button-prev'})
+      var swiper_body = new Swiper ('.swiper-container-tape', {
+        slidesPerView:1,
+        loop: true,
+        // Navigation arrows
+        nextButton: '.swiper-tape-button-next',
+        prevButton: '.swiper-tape-button-prev'})
+      var swiper_grip = new Swiper ('.swiper-container-grip', {
+        loop: true,
+        // Navigation arrows
+        nextButton: '.swiper-grip-button-next',
+        prevButton: '.swiper-grip-button-prev'})
+      var swiper_knob = new Swiper ('.swiper-container-knob', {
+        loop: true,
+        // Navigation arrows
+        nextButton: '.swiper-knob-button-next',
+        prevButton: '.swiper-knob-button-prev'})
+
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+  </body>
+</html>
