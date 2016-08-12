@@ -6,7 +6,7 @@ body{
 
 #page_body{
   /*height:100vh;*/
-  height:100%;
+  height:100vh;
 
 }
 
@@ -14,10 +14,9 @@ body{
   max-height: 100%;
   height: 100% 
 }
-
-.swipe_area{
-  margin-right: auto;
-  margin-left: auto;
+.fill{
+    min-height: 100%;
+    height: 100%;
 }
 
 #club-knob{
@@ -54,14 +53,12 @@ body{
 
 .swiper-slide {
     text-align: center;
-  	margin-right:auto;
-  	margin-left:auto;
+    margin-right:auto;
+    margin-left:auto;
     max-height: 100%;
     /*background-color: #FFF;*/
 }
 
-.club-pics{
-}
 
 /*.club-pics{
   width:20%;

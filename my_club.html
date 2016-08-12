@@ -4,7 +4,6 @@
     <title>Henrys Keulengenerator</title>
 
     <!-- Own Stylesheet -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -27,21 +26,24 @@
   </head>
 
   <body>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.min.js"></script>-->
-    <!-- Page Content  -->
     <div id="page_body">
       <div id="club_window"> </div>
     </div>
     
-
     <script type="text/javascript">
-      function create_club_part(club_part ,name_id){
-          var row = document.createElement("div");
-          row.className = "row";
+
+      var width = $(window).width();
+      var height = $(window).height();
+      console.log("init clubs parts with screen size:",width, height);
+      var size_ratio = height/4935/2;
+      
+      function create_club_part(club_part, name_id){
 
           var col = document.createElement("div");
           col.id = name_id;
-          row.appendChild(col);
+          col.className = "swipe_area"
+          col.setAttribute("style","width:"+5*(width * size_ratio)+"px");
+
 
           var swip = document.createElement("div"); // swip_container
           swip.className = "swiper-container swiper-container-"+club_part;
@@ -53,34 +55,52 @@
 
           var dir = "http://ephtron.de/henrys-dev/club-parts/clubs-";
           var fileextension = ".gif";
-          var colors = ["blau"]; //, "gruen", "rot"];
+          var colors = ["blau", "gruen", "rot"];
           colors.forEach(function(item){
             var final_url = dir+club_part+"/"+club_part+"-"+item+fileextension;
             $(wrap_swip).append('<div class="swiper-slide"><img id="img-club-'+club_part+'" class="club-pics" src="'+ final_url +'"/></div>');
+
           });
 
-          //var page_swip = document.createElement("div");
-          //page_swip.className = "swiper-"+club_part+"-pagination";
-          //var next_swip = document.createElement("div");
-          //next_swip.className = "swiper-"+club_part+"-button-next swiper-button-next";
-          //var prev_swip = document.createElement("div");
-          //prev_swip.className = "swiper-"+club_part+"-button-prev swiper-button-prev";
+
+          var page_swip = document.createElement("div");
+          page_swip.className = "swiper-"+club_part+"-pagination";
+          var next_swip = document.createElement("div");
+          next_swip.className = "swiper-"+club_part+"-button-next swiper-button-next";
+          var prev_swip = document.createElement("div");
+          prev_swip.className = "swiper-"+club_part+"-button-prev swiper-button-prev";
 
           swip.appendChild(wrap_swip);
-          //swip.appendChild(page_swip);
-          //swip.appendChild(next_swip);
-          //swip.appendChild(prev_swip);
-          $(club_window).append(row);
-          console.log("5")
+          swip.appendChild(page_swip);
+          swip.appendChild(next_swip);
+          swip.appendChild(prev_swip);
+          $(club_window).append(col);
+          $('.club-pics').css('width', (size_ratio * width)+'px');
+
+      }
+      function update_club_part_size(name_id, width){
+        document.getElementById(name_id).setAttribute("style","width:"+ width +"px");
       }
     </script>
     <script type="text/javascript">
+    $(document).ready(function(){
       create_club_part("knob","club-knob");
       create_club_part("grip","club-grip");
       create_club_part("tape","club-tape");
       create_club_part("body","club-body");
       create_club_part("top","club-top");
+
+      window.onresize = function(event) {
+            width = $(window).width();
+            height = $(window).height();
+            size_ratio = height/4915/2;
+            $('.club-pics').css('width', (size_ratio * width)+'px');
+            console.log("init clubs parts with screen size:",width, height);
+          
+          };
+    });
     </script>
+
 
 
     <!-- Init Swiper Scripts-->
