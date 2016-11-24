@@ -1,0 +1,640 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-height:100%;
+    max-width:100%;
+}
+
+#page_body{
+    width: 100vw;
+    max-width:900px;
+    min-width: 320px;
+    min-height: 320px;
+    height:100vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+  width:100%;
+  height:15vh;
+}
+
+.title-selection{
+  height:100%;
+  width:40%;
+  float:left;
+}
+
+.logo{
+  height:100%;
+  width:60%;
+  float:right;
+}
+
+.logo img{
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.title{
+  padding-left: 15px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.title h3 {
+    line-height: 24px;
+    margin: 0;
+}
+
+.selection-header{
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.selection-header p{
+  display:inline-block;
+  margin:0;
+  line-height: 14px;
+}
+
+.dropdown{
+  display: inline-block;
+}
+
+#club-gen{
+  height:80vh;
+}
+
+#club-window{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 600px;
+    padding-top: 1em;
+    height: 100%;
+}
+
+#club-knob{
+  height: 4.54955239064%;
+}
+#club-grip{
+  height: 40.69175991862%;
+  margin-top:-0.5vh;
+}
+#club-tape{
+  height: 3.5605289929%;
+}
+#club-body{
+  height: 48.83011190234%;  
+}
+#club-top{
+  margin-top:-0.7vh;
+  height: 2.3397260274%;
+}
+
+/* length of club in pixels
+  Classic Long, Albatros*/
+#club-knob-5175{
+  height: 4.63770%;
+  margin-bottom:-0.5vh;
+  z-index: 40;
+}
+#club-grip-5175{
+  z-index: 38;
+  height: 38.64735%;
+}
+#club-tape-5175{
+  height: 3.38165%;
+}
+#club-body-5175{
+  height: 51.20773%;  
+}
+#club-top-5175{
+  margin-top:-0.7vh;
+  height: 2.12561%;
+}
+
+/* length of club in pixels
+  Classic Short ,*/
+#club-knob-4925{
+  height: 4.87311%;
+  margin-bottom:-0.5vh;
+  z-index: 40;
+}
+#club-grip-4925{
+  height: 40.60913%;
+  z-index: 38;
+}
+#club-tape-4925{
+  height: 3.55329%;
+}
+#club-body-4925{
+  height: 48.73096%;  
+}
+#club-top-4925{
+  margin-top:-0.7vh;
+  height: 2.23351%;
+}
+/* length of club in pixels 4925
+   Pirouette,*/
+#club-knob-piro{
+  height: 4.77311%;
+  margin-bottom:-0.5vh;
+  z-index: 40;
+}
+#club-grip-piro{
+  height: 40.50913%;
+  z-index: 38;
+  margin-bottom:-0.05vh;
+}
+#club-tape-piro{
+  height: 3.35329%;
+  margin-bottom:-0.05vh;
+}
+#club-body-piro{
+  height: 49.33096%;
+}
+#club-top-piro{
+  margin-top:-0.7vh;
+  height: 2.03351%;
+}
+
+/* length of club in pixels
+  Mirage,*/
+#club-knob-4875{
+  height: 4.92307%;
+  margin-bottom:-0.5vh;
+  z-index: 40;
+}
+#club-grip-4875{
+  height: 41.02564%;
+  z-index:38;
+}
+#club-tape-4875{
+  height: 3.58974%;
+}
+#club-body-4875{
+  height: 48.20512%;  
+}
+#club-top-4875{
+  margin-top:-0.7vh;
+  height: 2.23351%;
+}
+
+.swiper-container {
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-wrapper{
+    max-height: 100%;
+    height:100%;
+    width:50%;
+}
+
+.swiper-slide {
+    opacity: 1;
+    text-align: center;
+    font-size: 18px;
+    background-color:rgba(0,0,0,0);
+    height:100%;
+    max-height: 100%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-next, .swiper-button-prev{
+
+    z-index: 100;
+    background-color: rgba(0,0,0,0);
+    height:4%;
+    padding:2px;
+}
+
+.button-pos-left{
+  background-size: 70% 90%;
+  background-image: url("./images/aro-lft.svg");
+  left:18%;
+}
+
+.button-pos-right{
+  background-size: 70% 90%;
+  background-image: url("./images/aro-rit.svg");
+  right:18%;
+}
+
+.button-pos-knob{
+  top:20%;
+}
+
+.button-pos-grip{
+  top:35%;
+}
+
+.button-pos-tape{
+  top:53%;
+}
+
+.button-pos-body{
+  top:75%;
+}
+
+.button-pos-top{
+  top:94%;
+}
+
+@media screen and (max-width: 720px) and (min-width: 456px) {
+
+  .header {
+    width:100%;
+    margin:0 auto ;
+    height:15vh;
+  }
+
+  .title-selection{
+    margin-top:5px;
+    height:40%;
+    width:100%;
+    float:left;
+  }
+
+ .logo{
+    padding-top: 0;
+    margin-left:auto;
+    margin-right: auto;
+    height:50%;
+    width:100%;
+    float:clear;
+  }
+
+  .logo img{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 0;
+  }
+
+
+  .title{
+    display:inline-block;
+    padding-top:10px;
+    padding-left: 5px;
+
+    font-size: 18px;
+    float:left;
+  }
+
+  .title h3 {
+    padding-left: 10px;
+      line-height: 18px;
+      margin: 0;
+  }
+
+  .selection-header{
+    float:right;
+    padding-top: 8px;
+    padding-left: 0px;
+    padding-right: 10px;
+   display:inline-block;
+  }
+
+  .selection-header p{
+    display:inline-block;
+  }
+
+  .dropdown{
+    display: inline-block;
+  }
+
+
+  .button-pos-knob{
+    top:25%;
+  }
+
+  .button-pos-grip{
+    top:40%;
+  }
+
+  .button-pos-tape{
+    top:55%;
+  }
+
+  .button-pos-body{
+    top:76%;
+  }
+
+  .button-pos-top{
+    top:95%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 455px) and (min-width: 0px) {
+
+  #page_body{
+    width: 100vw;
+    min-width: 320px;
+    min-height: 480px;
+    max-width:1000px;
+    height:100vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+  .header {
+    padding:0;
+    margin:0;
+    height:15vh;
+  }
+ .logo{
+    padding-top: 0;
+    height:70%;
+    width:100%;
+    float:right;
+  }
+
+  .logo img{
+    padding-top: 15px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title-selection{
+    margin-top:0;
+    height:40%;
+    width:100%;
+    float:left;
+  }
+
+  .selection-header{
+    padding-top: 8px;
+    padding-left:10px;
+  }
+
+  .title{
+    display:none;
+  }
+
+  .title h3 {
+      display:none;
+  }
+
+  .button-pos-knob{
+    top:21%;
+  }
+
+  .button-pos-grip{
+    top:40%;
+  }
+
+  .button-pos-tape{
+    top:54%;
+  }
+
+  .button-pos-body{
+    top:74%;
+  }
+
+  .button-pos-top{
+    top:95%;
+  }
+}
+
+
+@media screen and (max-height: 580px) and (min-height: 0px)and  (max-width: 1000px) and (min-width: 0px) {
+
+    .header{
+      padding:0;
+      margin:0;
+      height:15vh;
+    }
+
+    .logo{
+      width:40%;
+      float:right;
+    }
+
+    .logo img{
+      padding-top: 10px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .title {
+      display:none;
+      padding-top:0;
+      padding-bottom:0;
+    }
+
+    .title h3{
+      display:none;
+      padding-top:0;
+      padding-bottom:0;
+    }
+
+    .title-selection{
+        margin-top:0;
+        height:40%;
+        width:60%;
+        float:left;
+    }
+
+    .selection-header{
+        padding-top: 8px;
+        padding-left:10px;
+        float:left;
+    }
+
+    .button-pos-knob{
+      top:22%;
+    }
+
+    .button-pos-grip{
+      top:40%;
+    }
+
+    .button-pos-tape{
+      top:56.5%;
+    }
+
+    .button-pos-body{
+      top:76%;
+    }
+
+    .button-pos-top{
+      top:95%;
+    }
+}
+
+@media screen and (max-height: 400px) and (min-height: 0px) and (max-width: 480px) and (min-width: 0px) {
+
+
+    #header{
+      padding:0;
+      margin:0;
+      height:15vh;
+    }
+
+    .logo{
+      width:50%;
+      float:right;
+    }
+
+    .logo img{
+      padding-top: 10px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .title {
+      display:none;
+      padding-top:0;
+      padding-bottom:0;
+    }
+
+    .title h3{
+      display:none;
+      padding-top:0;
+      padding-bottom:0;
+    }
+
+    .title-selection{
+        margin-top:0;
+        height:40%;
+        width:50%;
+        float:left;
+    }
+
+    .selection-header{
+        padding-top: 0;
+        padding-left:10px;
+        float:left;
+    }
+
+    .button-pos-knob{
+      top:25%;
+    }
+
+    .button-pos-grip{
+      top:40%;
+    }
+
+    .button-pos-tape{
+      top:60%;
+    }
+
+    .button-pos-body{
+      top:80%;
+    }
+
+    .button-pos-top{
+      top:96%;
+    }
+}
+
+
+@media screen and (max-height: 400px) and (min-height: 0px){
+
+    .button-pos-knob{ 
+      top:25%;
+    }
+
+    .button-pos-grip{
+      top:40%;
+    }
+
+    .button-pos-tape{
+      top:60%;
+    }
+
+    .button-pos-body{
+      top:80%;
+    }
+
+    .button-pos-top{
+      top:96%;
+    }
+}
+
+@media screen and (max-height: 540px) and (min-height: 401px){
+
+    .button-pos-knob{ 
+      top:22%;
+    }
+
+    .button-pos-grip{
+      top:40%;
+    }
+
+    .button-pos-tape{
+      top:58%;
+    }
+
+    .button-pos-body{
+      top:78%;
+    }
+
+    .button-pos-top{
+      top:96%;
+    }
+}
+
+
+@media screen and (max-height: 720px) and (min-height: 541px){
+
+    .logo img{
+      padding-top: 5px;
+    }
+
+    .selection-header {
+      padding-top: 5px;
+    }
+
+    .button-pos-knob{ 
+      top:21%;
+    }
+
+    .button-pos-grip{
+      top:38%;
+    }
+
+    .button-pos-tape{
+      top:55.5%;
+    }
+
+    .button-pos-body{
+      top:77%;
+    }
+
+    .button-pos-top{
+      top:96%;
+    }
+}
+
