@@ -7,59 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <!-- Swiper Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 
-    <link rel="stylesheet" href="professional.css">
+    <link rel="stylesheet" href="css/henrys-club-gen.css">
 </head>
 <body>
-    <div id="page_body">
-        <div class="header">
+<div id="club-generator">
+    <div class="header">
+        <div class="logo" id="logo">
+            <a href="https://www.henrys-online.de/en/shop/juggling/juggling-clubs/individual-clubs/">
+                <img src="img/Henrys_Logo.png">
+            </a>
+        </div>
 
-            <div class="logo" id="logo">
-                <a href="https://www.henrys-online.de/en/shop/juggling/juggling-clubs/individual-clubs/"> 
-                    <img src="../images/Henrys_Logo.png">
-                </a>
+        <div class="title-selection">
+            <div class="title">
+                <h3>Choose your club</h3>
             </div>
-
-            <div class="title-selection">
-
-                <div class="title"> 
-                    <h3>Choose your club</h3>
-                </div>
-
-                <div class="selection-header" id="choose_club"> 
-                    <p>Current Selection:</p>
-                    <div class="dropdown">
-                        <select id="club-selector">
-                            <option>Pirouette</option>
-                            <option>Classic Short</option>
-                            <option>Classic Long</option>
-                            <!--<option>Dolphin Short</option>
-                            <option>Dolphin Long</option>-->
-                            <option>Albatros</option>
-                            <option>Mirage</option>
-                            <option>Loop</option>
-                        </select>
-                    </div>
+            <div class="selection-header" id="choose_club">
+                <p>Current Selection:</p>
+                <div class="dropdown">
+                    <select id="club-selector">
+                        <option>Pirouette</option>
+                        <option>Pirouette Grip</option>
+                        <option>Classic Short</option>
+                        <option>Classic Long</option>
+                        <option>Mirage</option>
+                        <option>Albatros</option>
+                        <option>Delphin</option>
+                        <option>Loop</option>
+                        <option>Loop Grip</option>
+                    </select>
                 </div>
             </div>
         </div>
-
-        <div id="club-gen">
-            <div class="row" id="club-window"> </div>
-        </div>
-
     </div>
-    
 
-    <script type="text/javascript" src="club-gen.js"></script>
+    <div id="club-gen">
+        <div class="row" id="club-window"></div>
+    </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+</div>
 
-    <!-- init first club-->
-    <script>        
-        choose_club_typ();
-    </script>
+
+<script type="text/javascript" src="js/club-gen.js"></script>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- init first club-->
+<script>
+    choose_club_typ();
+</script>
 </body>
 </html>
