@@ -1,0 +1,278 @@
+
+#club-window {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+}
+
+#club-knob {
+    height: 4.54955239064%;
+}
+
+#club-grip {
+    height: 40.69175991862%;
+    margin-top: -0.5vh;
+}
+
+#club-tape {
+    height: 3.5605289929%;
+}
+
+#club-body {
+    height: 48.83011190234%;
+}
+
+#club-top {
+    margin-top: -0.7vh;
+    height: 2.3397260274%;
+}
+
+/* length of club in pixels 4925
+   Pirouette*/
+#club-knob-piro {
+    height: 4.81309%;
+    margin-bottom: -0.185vh;
+    z-index: 40;
+}
+
+#club-grip-piro {
+    height: 40.54913%;
+    z-index: 38;
+    margin-bottom: -0.05vh;
+}
+
+#club-tape-piro {
+    height: 3.53329%;
+    margin-bottom: -0.05vh;
+}
+
+#club-body-piro {
+    height: 48.97099%;
+}
+
+#club-top-piro {
+    margin-top: -0.75vh;
+    height: 2.13350%;
+}
+
+/* length of club in pixels 4925
+   Pirouette Grip*/
+#club-knob-piro-grip {
+    height: 4.81309%;
+    margin-bottom: -0.185vh;
+    z-index: 40;
+}
+
+#club-grip-piro-grip {
+    height: 40.54913%;
+    z-index: 38;
+    margin-bottom: -0.05vh;
+}
+
+#club-tape-piro-grip {
+    height: 3.60329%;
+    margin-bottom: -0.05vh;
+}
+
+#club-body-piro-grip {
+    height: 48.90099%;
+}
+
+#club-top-piro-grip {
+    margin-top: -0.75vh;
+    height: 2.13350%;
+}
+
+/* length of club in pixels 4925
+   Classic Short,*/
+#club-knob-short {
+    height: 4.81309%;
+    margin-bottom: -0.185vh;
+    z-index: 40;
+}
+
+#club-grip-short {
+    height: 40.54913%;
+    z-index: 38;
+    margin-bottom: -0.05vh;
+}
+
+#club-tape-short {
+    height: 3.53329%;
+    margin-bottom: -0.05vh;
+}
+
+#club-body-short {
+    height: 48.97099%;
+}
+
+#club-top-short {
+    margin-top: -0.75vh;
+    height: 2.13350%;
+}
+
+/* length of club in pixels 5175
+  Classic Long*/
+#club-knob-long {
+    height: 4.63768%;
+    margin-bottom: -0.3vh;
+    z-index: 40;
+}
+
+#club-grip-long {
+    z-index: 38;
+    height: 38.62734%;
+}
+
+#club-tape-long {
+    height: 3.39164%;
+}
+
+#club-body-long {
+    height: 51.21773%;
+}
+
+#club-top-long {
+    margin-top: -0.5vh;
+    height: 2.12561%;
+}
+
+/* length of club in pixels 4875
+  Mirage,*/
+#club-knob-mirage {
+    height: 4.82307%;
+    margin-bottom: -0.2vh;
+    z-index: 40;
+}
+
+#club-grip-mirage {
+    height: 41.10564%;
+    margin-bottom: -0.05vh;
+    z-index: 38;
+}
+
+#club-tape-mirage {
+    margin-bottom: -0.05vh;
+    height: 3.65974%;
+}
+
+#club-body-mirage {
+    height: 48.15512%;
+}
+
+#club-top-mirage {
+    margin-top: -0.5vh;
+    height: 2.23351%;
+}
+
+/* length of club in pixels 5175
+  Albatros*/
+#club-knob-alba {
+    height: 4.63770%;
+    margin-bottom: -0.25vh;
+    z-index: 40;
+}
+
+#club-grip-alba {
+    z-index: 38;
+    height: 38.64735%;
+    margin-bottom: -0.05vh;
+}
+
+#club-tape-alba {
+    height: 3.38165%;
+    margin-bottom: -0.05vh;
+}
+
+#club-body-alba {
+    height: 51.20773%;
+}
+
+#club-top-alba {
+    margin-top: -0.7vh;
+    height: 2.12561%;
+}
+
+/* length of club in pixels 4950
+  Delphin*/
+#club-knob-delphin {
+    height: 4.848484%;
+    margin-bottom: -0.20vh;
+    z-index: 40;
+}
+
+#club-grip-delphin {
+    z-index: 38;
+    height: 36.363636%;
+}
+
+#club-tape-delphin {
+    height: 3.030307%;
+}
+
+#club-body-delphin {
+    height: 53.535353%;
+}
+
+#club-top-delphin {
+    margin-top: -0.7vh;
+    height: 2.22222%;
+}
+
+/* length of club in pixels 4925
+   Loop*/
+#club-knob-loop {
+    height: 4.81309%;
+    margin-bottom: -0.185vh;
+    z-index: 40;
+}
+
+#club-grip-loop {
+    height: 40.54913%;
+    z-index: 38;
+    margin-bottom: -0.05vh;
+}
+
+#club-tape-loop {
+    height: 3.53329%;
+    margin-bottom: -0.05vh;
+}
+
+#club-body-loop {
+    height: 48.97099%;
+}
+
+#club-top-loop {
+    margin-top: -0.75vh;
+    height: 2.13350%;
+}
+
+/* length of club in pixels 4925
+   Loop Grip*/
+#club-knob-loop-grip {
+    height: 4.81309%;
+    margin-bottom: -0.25vh;
+    z-index: 40;
+}
+
+#club-grip-loop-grip {
+    height: 40.54913%;
+    z-index: 38;
+    margin-bottom: -0.05vh;
+}
+
+#club-tape-loop-grip {
+    height: 3.60329%;
+    margin-bottom: -0.05vh;
+}
+
+#club-body-loop-grip {
+    height: 48.90099%;
+}
+
+#club-top-loop-grip {
+    margin-top: -0.75vh;
+    height: 2.13350%;
+}

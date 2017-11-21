@@ -1,6 +1,7 @@
 html, body {
     position: relative;
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -19,39 +20,59 @@ img {
 
 #club-generator {
     width: 100%;
+    height: 100%;
     max-width: 900px;
     min-width: 320px;
     min-height: 320px;
-    height: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 
 .header {
     width: 100%;
-    height: 15vh;
+    height: 10%;
+}
+
+
+#club-gen {
+    height: 85%;
 }
 
 .title-selection {
-    height: 100%;
     width: 40%;
     float: left;
 }
 
 .logo {
-    height: 100%;
     width: 60%;
     float: right;
 }
 
+#selected-parts{
+    height: 5%;
+    width: 100%;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#selected-parts span{
+    display: inline-block;
+    /*width: 100%;*/
+    text-align: left;
+    margin-top:15px;
+}
+
 .logo img {
-    padding-top: 20px;
-    padding-right: 10px;
+    margin-top: 20px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .title {
-    padding-left: 15px;
-    padding-top: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
     font-size: 24px;
 }
 
@@ -61,295 +82,68 @@ img {
 }
 
 .selection-header {
-    padding-left: 15px;
-    padding-top: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
-.selection-header p {
+.selection-header span {
     display: inline-block;
     margin: 0;
     line-height: 14px;
 }
 
+#selection-menu{
+    margin-left: 15px;
+}
+
 .dropdown {
     display: inline-block;
 }
-
-#club-gen {
-    height: 80vh;
+#selected-title{
+    margin-left: 15px;
+    float:left;
+    width: 16%;
 }
 
-#club-window {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    max-width: 600px;
-    padding-top: 1em;
-    height: 100%;
+#selected-knob{
+    float:left;
+    width: 16%;
 }
 
-#club-knob {
-    height: 4.54955239064%;
+#selected-grip{
+    float:left;
+    width: 16%;
 }
 
-#club-grip {
-    height: 40.69175991862%;
-    margin-top: -0.5vh;
+#selected-tape{
+    float:left;
+    width: 16%;
 }
 
-#club-tape {
-    height: 3.5605289929%;
+#selected-body{
+    float:left;
+    width: 16%;
 }
 
-#club-body {
-    height: 48.83011190234%;
+#selected-top{
+    float:left;
+    width: 16%;
 }
 
-#club-top {
-    margin-top: -0.7vh;
-    height: 2.3397260274%;
+.club-pics{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-/* length of club in pixels 4925
-   Pirouette*/
-#club-knob-piro {
-    height: 4.81309%;
-    margin-bottom: -0.185vh;
+.swiper-container-knob{
     z-index: 40;
 }
 
-#club-grip-piro {
-    height: 40.54913%;
-    z-index: 38;
-    margin-bottom: -0.05vh;
+.swiper-container-grip{
+    z-index: 30;
 }
 
-#club-tape-piro {
-    height: 3.53329%;
-}
-
-#club-body-piro {
-    height: 48.97099%;
-}
-
-#club-top-piro {
-    margin-top: -0.75vh;
-    height: 2.13350%;
-}
-
-/* length of club in pixels 4925
-   Pirouette Grip*/
-#club-knob-piro-grip {
-    height: 4.81309%;
-    margin-bottom: -0.185vh;
-    z-index: 40;
-}
-
-#club-grip-piro-grip {
-    height: 40.54913%;
-    z-index: 38;
-    margin-bottom: -0.05vh;
-}
-
-#club-tape-piro-grip {
-    height: 3.60329%;
-}
-
-#club-body-piro-grip {
-    height: 48.90099%;
-}
-
-#club-top-piro-grip {
-    margin-top: -0.75vh;
-    height: 2.13350%;
-}
-
-/* length of club in pixels 4925
-   Classic Short,*/
-#club-knob-short {
-    height: 4.81309%;
-    margin-bottom: -0.185vh;
-    z-index: 40;
-}
-
-#club-grip-short {
-    height: 40.54913%;
-    z-index: 38;
-    margin-bottom: -0.05vh;
-}
-
-#club-tape-short {
-    height: 3.53329%;
-}
-
-#club-body-short {
-    height: 48.97099%;
-}
-
-#club-top-short {
-    margin-top: -0.75vh;
-    height: 2.13350%;
-}
-
-/* length of club in pixels 5175
-  Classic Long*/
-#club-knob-long {
-    height: 4.63768%;
-    margin-bottom: -0.3vh;
-    z-index: 40;
-}
-
-#club-grip-long {
-    z-index: 38;
-    height: 38.62734%;
-}
-
-#club-tape-long {
-    height: 3.39164%;
-}
-
-#club-body-long {
-    height: 51.21773%;
-}
-
-#club-top-long {
-    margin-top: -0.5vh;
-    height: 2.12561%;
-}
-
-/* length of club in pixels 4875
-  Mirage,*/
-#club-knob-mirage {
-    height: 4.82307%;
-    margin-bottom: -0.2vh;
-    z-index: 40;
-}
-
-#club-grip-mirage {
-    height: 41.10564%;
-    margin-bottom: -0.05vh;
-    z-index: 38;
-}
-
-#club-tape-mirage {
-    margin-bottom: -0.05vh;
-    height: 3.65974%;
-}
-
-#club-body-mirage {
-    height: 48.15512%;
-}
-
-#club-top-mirage {
-    margin-top: -0.5vh;
-    height: 2.23351%;
-}
-
-/* length of club in pixels 5175
-  Albatros*/
-#club-knob-alba {
-    height: 4.63770%;
-    margin-bottom: -0.25vh;
-    z-index: 40;
-}
-
-#club-grip-alba {
-    z-index: 38;
-    height: 38.64735%;
-}
-
-#club-tape-alba {
-    height: 3.38165%;
-}
-
-#club-body-alba {
-    height: 51.20773%;
-}
-
-#club-top-alba {
-    margin-top: -0.7vh;
-    height: 2.12561%;
-}
-
-/* length of club in pixels 4950
-  Delphin*/
-#club-knob-delphin {
-    height: 4.848484%;
-    margin-bottom: -0.20vh;
-    z-index: 40;
-}
-
-#club-grip-delphin {
-    z-index: 38;
-    height: 36.363636%;
-}
-
-#club-tape-delphin {
-    height: 3.030307%;
-}
-
-#club-body-delphin {
-    height: 53.535353%;
-}
-
-#club-top-delphin {
-    margin-top: -0.7vh;
-    height: 2.22222%;
-}
-
-/* length of club in pixels 4925
-   Loop*/
-#club-knob-loop {
-    height: 4.81309%;
-    margin-bottom: -0.185vh;
-    z-index: 40;
-}
-
-#club-grip-loop {
-    height: 40.54913%;
-    z-index: 38;
-    margin-bottom: -0.05vh;
-}
-
-#club-tape-loop {
-    height: 3.53329%;
-}
-
-#club-body-loop {
-    height: 48.97099%;
-}
-
-#club-top-loop {
-    margin-top: -0.75vh;
-    height: 2.13350%;
-}
-
-/* length of club in pixels 4925
-   Loop Grip*/
-#club-knob-loop-grip {
-    height: 4.81309%;
-    margin-bottom: -0.185vh;
-    z-index: 40;
-}
-
-#club-grip-loop-grip {
-    height: 40.54913%;
-    z-index: 38;
-    margin-bottom: -0.05vh;
-}
-
-#club-tape-loop-grip {
-    height: 3.60329%;
-}
-
-#club-body-loop-grip {
-    height: 48.90099%;
-}
-
-#club-top-loop-grip {
-    margin-top: -0.75vh;
-    height: 2.13350%;
-}
 
 /* Set Containers Styles*/
 
@@ -408,23 +202,23 @@ img {
 }
 
 .button-pos-knob {
-    top: 20%;
+    top: 12%;
 }
 
 .button-pos-grip {
-    top: 35%;
+    top: 29.5%;
 }
 
 .button-pos-tape {
-    top: 53%;
+    top: 49.5%;
 }
 
 .button-pos-body {
-    top: 75%;
+    top: 72%;
 }
 
 .button-pos-top {
-    top: 94%;
+    top: 93%;
 }
 
 /* Adjust to different screen sizes */
@@ -450,7 +244,7 @@ img {
         margin-right: auto;
         height: 50%;
         width: 100%;
-        float: clear;
+        float: none;
     }
 
     .logo img {

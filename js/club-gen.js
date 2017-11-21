@@ -9,7 +9,7 @@
  *
  * Licensed under MIT
  *
- * Released on: Oktober 15, 2017
+ * Released on: November 22, 2017
  */
 
 
@@ -19,7 +19,6 @@ function choose_club_typ() {
     var club_selector = document.getElementById("club-selector");
     var selected_club = "-";
     var _selection = club_selector.options[club_selector.selectedIndex].value;
-
 
     if (_selection !== selected_club) {
         selected_club = _selection;
@@ -118,9 +117,9 @@ function choose_club_typ() {
             paths['body_items'] = ["17701_KorpusGrip_weiß.gif",
                 "17784_KorpusGrip_orange.gif",
                 "17788_KorpusGrip_gruen.gif",
-                "19151_KorpusGrip-blau.gif",
+                "19151_KorpusGrip_blau.gif",
                 "19242_KorpusGrip_pink.gif"
-                //"19717_KorpusGrip_tu.gif"
+                //"19717_KorpusGrip_tuerkis.gif"
             ];
 
             paths['top_items'] = ["11715_TopClassic_schwarz.gif",
@@ -387,13 +386,13 @@ function choose_club_typ() {
                 "19638_KnobDelphin_pink.gif"];
 
             paths['grip_items'] = ["19656_Griff_Loop_tu.gif",
-                "19652_Griff_Loop_ws.gif",
-                "19653_Griff_Loop_bl.gif",
-                "19654_Griff_Loop_ge.gif",
-                "19655_Griff_Loop_gn.gif",
-                "19657_Griff_Loop_or.gif",
-                "19658_Griff_Loop_pi.gif",
-                "19659_Griff_Loop_ro.gif"];
+                "19652_Griff_Loop_weiß.gif",
+                "19653_Griff_Loop_blau.gif",
+                "19654_Griff_Loop_gelb.gif",
+                "19655_Griff_Loop_gruen.gif",
+                "19657_Griff_Loop_orange.gif",
+                "19658_Griff_Loop_pink.gif",
+                "19659_Griff_Loop_rot.gif"];
 
             paths['tape_items'] = ["11226_Tape_schwarz.gif",
                 "11225_Tape_weiß.gif",
@@ -438,13 +437,13 @@ function choose_club_typ() {
                 "19638_KnobDelphin_pink.gif"];
 
             paths['grip_items'] = ["19656_Griff_Loop_tu.gif",
-                "19652_Griff_Loop_ws.gif",
-                "19653_Griff_Loop_bl.gif",
-                "19654_Griff_Loop_ge.gif",
-                "19655_Griff_Loop_gn.gif",
-                "19657_Griff_Loop_or.gif",
-                "19658_Griff_Loop_pi.gif",
-                "19659_Griff_Loop_ro.gif"];
+                "19652_Griff_Loop_weiß.gif",
+                "19653_Griff_Loop_blau.gif",
+                "19654_Griff_Loop_gelb.gif",
+                "19655_Griff_Loop_gruen.gif",
+                "19657_Griff_Loop_orange.gif",
+                "19658_Griff_Loop_pink.gif",
+                "19659_Griff_Loop_rot.gif"];
 
             paths['tape_items'] = ["11226_Tape_schwarz.gif",
                 "11225_Tape_weiß.gif",
@@ -454,12 +453,12 @@ function choose_club_typ() {
                 "18959_Tape_gruen.gif",
                 "19438_Tape_blau.gif"];
 
-            paths['body_items'] = ["19151_KorpusGrip-blau.gif",
+            paths['body_items'] = ["19151_KorpusGrip_blau.gif",
                 "17701_KorpusGrip_weiß.gif",
                 "17784_KorpusGrip_orange.gif",
                 "17788_KorpusGrip_gruen.gif",
                 "19242_KorpusGrip_pink.gif",
-                "19717_KorpusGrip_tu.gif"];
+                "19717_KorpusGrip_tuerkis.gif"];
 
             paths['top_items'] = ["11715_TopClassic_schwarz.gif",
                 "11716_TopClassic_weiß.gif",
@@ -479,6 +478,10 @@ document.getElementById("club-selector").addEventListener('click', function () {
     choose_club_typ();
 }, false);
 
+document.getElementById("club-selector").addEventListener('touchend', function () {
+    choose_club_typ();
+}, false);
+
 function create_club_part(parent, club_part, name_id, fold, items) {
     var parent_element = document.getElementById(parent);
 
@@ -494,12 +497,15 @@ function create_club_part(parent, club_part, name_id, fold, items) {
     wrap_swip.className = "swiper-wrapper";
     wrap_swip.id = "club-" + club_part + "-swiper";
 
-    var dir = "img/";
+    var dir = "img_sml/";
     items.forEach(function (item) {
         // var club_item_path = get_club_path(club_part, item);
-        // console.log("path: ", club_item_path);
+        console.log("ITEM:", item);
         var final_url = dir + fold + "/" + item;
-        var image_string = '<img id="img-club-' + club_part + '" class="club-pics center-block" src="' + final_url + '"/>';
+        var image_string = '<img id="img-club-' + club_part + '" ' +
+            'class="club-pics center-block" ' +
+            'src="' + final_url + '" ' +
+            'draggable="false"/>';
         var slide = document.createElement("div");
         slide.className = "swiper-slide";
         slide.innerHTML = image_string;
@@ -517,33 +523,54 @@ function create_club_part(parent, club_part, name_id, fold, items) {
 }
 
 function build_swiper() {
+
     new Swiper('.swiper-container-top', {
+        club_part: "top",
         slidesPerView: 1,
         loop: true,
         nextButton: '.swiper-top-button-prev',
-        prevButton: '.swiper-top-button-next'
+        prevButton: '.swiper-top-button-next',
+        onSlideChangeEnd: function(swiper) {
+            change_text(swiper, "top");
+        }
     });
     new Swiper('.swiper-container-body', {
+        club_part: "body",
         slidesPerView: 1,
         loop: true,
         nextButton: '.swiper-body-button-prev',
-        prevButton: '.swiper-body-button-next'
+        prevButton: '.swiper-body-button-next',
+        onSlideChangeEnd: function(swiper) {
+            change_text(swiper, "body");
+        }
     });
     new Swiper('.swiper-container-tape', {
+        club_part: "tape",
         slidesPerView: 1,
         loop: true,
         nextButton: '.swiper-tape-button-prev',
-        prevButton: '.swiper-tape-button-next'
+        prevButton: '.swiper-tape-button-next',
+        onSlideChangeEnd: function(swiper) {
+            change_text(swiper, "tape");
+        }
     });
     new Swiper('.swiper-container-grip', {
+        club_part: "grip",
         loop: true,
         nextButton: '.swiper-grip-button-prev',
-        prevButton: '.swiper-grip-button-next'
+        prevButton: '.swiper-grip-button-next',
+        onSlideChangeEnd: function(swiper) {
+            change_text(swiper, "grip");
+        }
     });
     new Swiper('.swiper-container-knob', {
+        clubpart: "knob",
         loop: true,
         nextButton: '.swiper-knob-button-prev',
-        prevButton: '.swiper-knob-button-next'
+        prevButton: '.swiper-knob-button-next',
+        onSlideChangeEnd: function(swiper) {
+            change_text(swiper, "knob");
+        }
     });
 }
 
@@ -561,6 +588,64 @@ function create_club(type) {
     create_club_part("club-window", "top", "club-top-" + type, club_path['top_fold'], club_path['top_items']);
     build_swiper();
 }
+
+function change_text(swiper, club_part) {
+    console.log(club_part);
+    var image = swiper.container[0].querySelector(".swiper-slide-active").querySelector("img");
+    var slash_index = image.src.lastIndexOf("/");
+    var point_index = image.src.lastIndexOf("gif");
+    var club_part_name = image.src.substring(slash_index + 1, point_index - 1);
+    var splitted_names = adjust_language(club_part_name.split("_"), "en");
+    var selected_part_text = document.getElementById("selected-" + club_part);
+    selected_part_text.innerHTML = splitted_names[1] + " " + splitted_names[2];
+}
+
+function adjust_language(word_list, lang){
+    var adjusted_word_list = [];
+    if (lang === "de"){
+        word_list.forEach(function (word){
+            var w = word;
+            w = w.replace(/([A-Z])/g, ' $1').trim();
+            if (word === "wei%C3%9F"){
+                w = decodeURI(word);
+            }
+            adjusted_word_list.push(w);
+        });
+    } else if (lang === "en"){
+        word_list.forEach(function (word){
+            var w = word;
+            w = w.replace(/([A-Z])/g, ' $1').trim();
+            if (word === "wei%C3%9F"){
+                w = "white";
+            }
+            else if (word === "blau"){
+                w = "blue";
+            }
+            else if (word === "gruen"){
+                w = "green";
+            }
+            else if (word === "rot"){
+                w = "red";
+            }
+            else if (word === "schwarz"){
+                w = "black";
+            }
+            else if (word === "gelb"){
+                w = "yellow";
+            }
+            else if (word === "lila"){
+                w = "purple";
+            }
+            else if (word === "silver"){
+                w = "silver";
+            }
+            adjusted_word_list.push(w);
+        });
+    }
+    return adjusted_word_list
+}
+
+
 
 function get_club_path(type, name) {
 
@@ -601,14 +686,14 @@ function get_club_path(type, name) {
         "17886_GriffPiro_rot.gif",
         "17931_GriffPiro_blau.gif",
         "19236_GriffPiro_lila.gif",
-        "19652_Griff_Loop_ws.gif",
-        "19653_Griff_Loop_bl.gif",
-        "19654_Griff_Loop_ge.gif",
-        "19655_Griff_Loop_gn.gif",
+        "19652_Griff_Loop_weiß.gif",
+        "19653_Griff_Loop_blau.gif",
+        "19654_Griff_Loop_gelb.gif",
+        "19655_Griff_Loop_gruen.gif",
         "19656_Griff_Loop_tu.gif",
-        "19657_Griff_Loop_or.gif",
-        "19658_Griff_Loop_pi.gif",
-        "19659_Griff_Loop_ro.gif"
+        "19657_Griff_Loop_orange.gif",
+        "19658_Griff_Loop_pink.gif",
+        "19659_Griff_Loop_rot.gif"
     ];
 
     var tape_path_list = [
@@ -660,9 +745,9 @@ function get_club_path(type, name) {
         "17701_KorpusGrip_weiß.gif",
         "17784_KorpusGrip_orange.gif",
         "17788_KorpusGrip_gruen.gif",
-        "19151_KorpusGrip-blau.gif",
+        "19151_KorpusGrip_blau.gif",
         "19242_KorpusGrip_pink.gif",
-        "19717_KorpusGrip_tu.gif"
+        "19717_KorpusGrip_tuerkis.gif"
     ];
 
     var top_path_list = [
