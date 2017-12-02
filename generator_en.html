@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Henrys Professional Clubs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Swiper Stylesheet -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/henrys-club-gen.css">
+
+    <link rel="stylesheet" href="css/henrys-club-config.css">
+</head>
+<body>
+<div id="club-generator">
+    <div class="header">
+        <div class="logo" id="logo">
+            <a href="https://www.henrys-online.de/en/shop/juggling/juggling-clubs/individual-clubs/">
+                <img src="img/Henrys_Logo.png" draggable="false">
+            </a>
+        </div>
+
+        <div class="title-selection">
+            <div class="title">
+                <h3>Choose your club</h3>
+            </div>
+            <div class="selection-header" id="choose_club">
+                <span>Current Club:</span>
+                <div id="selection-menu" class="dropdown">
+                    <select id="club-selector">
+                        <option>Pirouette</option>
+                        <option>Pirouette Grip</option>
+                        <option>Classic Short</option>
+                        <option>Classic Long</option>
+                        <option>Mirage</option>
+                        <option>Albatros</option>
+                        <option>Delphin</option>
+                        <option>Loop</option>
+                        <option>Loop Grip</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="club-gen">
+        <div class="row" id="club-window"></div>
+    </div>
+
+    <div id="selected-parts">
+        <span id="selected-title">Current Parts:</span>
+        <span id="selected-knob">Knob grün</span>
+        <span id="selected-grip">Griff rot</span>
+        <span id="selected-tape">Tape schwarz</span>
+        <span id="selected-body">Korpus blau</span>
+        <span id="selected-top">Top schwarz</span>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="js/club-gen.js"></script>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- init first club-->
+<script>
+    choose_club_typ("en");
+</script>
+</body>
+</html>

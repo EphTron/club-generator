@@ -3,6 +3,7 @@
  *
  * Application for personal club configurations of Henrys Clubs.
  * Uses Swiper 3.4.2 Framework (http://www.idangero.us/swiper/)
+ * Also see swiper.min.js
  *
  * Copyright 2017, Ephraim Schott
  * https://github.com/EphTron/club-generator
@@ -14,8 +15,10 @@
 
 
 var club_path = "";
+var language = "en";
 
-function choose_club_typ() {
+function choose_club_typ(lang) {
+    language = lang;
     var club_selector = document.getElementById("club-selector");
     var selected_club = "-";
     var _selection = club_selector.options[club_selector.selectedIndex].value;
@@ -385,7 +388,7 @@ function choose_club_typ() {
                 "19635_KnobDelphin_rot.gif",
                 "19638_KnobDelphin_pink.gif"];
 
-            paths['grip_items'] = ["19656_Griff_Loop_tu.gif",
+            paths['grip_items'] = ["19656_Griff_Loop_tuerkis.gif",
                 "19652_Griff_Loop_weiß.gif",
                 "19653_Griff_Loop_blau.gif",
                 "19654_Griff_Loop_gelb.gif",
@@ -436,7 +439,7 @@ function choose_club_typ() {
                 "19635_KnobDelphin_rot.gif",
                 "19638_KnobDelphin_pink.gif"];
 
-            paths['grip_items'] = ["19656_Griff_Loop_tu.gif",
+            paths['grip_items'] = ["19656_Griff_Loop_tuerkis.gif",
                 "19652_Griff_Loop_weiß.gif",
                 "19653_Griff_Loop_blau.gif",
                 "19654_Griff_Loop_gelb.gif",
@@ -590,19 +593,25 @@ function create_club(type) {
 }
 
 function change_text(swiper, club_part) {
-    console.log(club_part);
+    // get image name
     var image = swiper.container[0].querySelector(".swiper-slide-active").querySelector("img");
     var slash_index = image.src.lastIndexOf("/");
     var point_index = image.src.lastIndexOf("gif");
-    var club_part_name = image.src.substring(slash_index + 1, point_index - 1);
-    var splitted_names = adjust_language(club_part_name.split("_"), "en");
+    // prepare string for
+    var club_part_name = image.src.substring(slash_index + 1, point_index - 1).replace(/([a-z](?=[A-Z]))/g, '$1_');
+    // get and split item attributes and adjust language
+    var splitted_names = adjust_language(club_part_name.split("_"));
     var selected_part_text = document.getElementById("selected-" + club_part);
-    selected_part_text.innerHTML = splitted_names[1] + " " + splitted_names[2];
+    if (splitted_names.length === 3) {
+        selected_part_text.innerHTML = splitted_names[1] + " " + splitted_names[2];
+    } else if (splitted_names.length === 4){
+        selected_part_text.innerHTML = splitted_names[1] + " " + splitted_names[2] + " " + splitted_names[3];
+    }
 }
 
-function adjust_language(word_list, lang){
+function adjust_language(word_list){
     var adjusted_word_list = [];
-    if (lang === "de"){
+    if (language === "de"){
         word_list.forEach(function (word){
             var w = word;
             w = w.replace(/([A-Z])/g, ' $1').trim();
@@ -611,7 +620,7 @@ function adjust_language(word_list, lang){
             }
             adjusted_word_list.push(w);
         });
-    } else if (lang === "en"){
+    } else if (language === "en"){
         word_list.forEach(function (word){
             var w = word;
             w = w.replace(/([A-Z])/g, ' $1').trim();
@@ -638,6 +647,24 @@ function adjust_language(word_list, lang){
             }
             else if (word === "silver"){
                 w = "silver";
+            }
+            else if (word === "tuerkis"){
+                w = "turquoise";
+            }
+            else if (word === "Griff"){
+                w = "Grip";
+            }
+            else if (word === "Korpus"){
+                w = "Body";
+            }
+            else if (word === "Rund"){
+                w = "Round";
+            }
+            else if (word === "Kurz"){
+                w = "Short";
+            }
+            else if (word === "Lang"){
+                w = "Long";
             }
             adjusted_word_list.push(w);
         });
@@ -690,7 +717,7 @@ function get_club_path(type, name) {
         "19653_Griff_Loop_blau.gif",
         "19654_Griff_Loop_gelb.gif",
         "19655_Griff_Loop_gruen.gif",
-        "19656_Griff_Loop_tu.gif",
+        "19656_Griff_Loop_tuerkis.gif",
         "19657_Griff_Loop_orange.gif",
         "19658_Griff_Loop_pink.gif",
         "19659_Griff_Loop_rot.gif"
