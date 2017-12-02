@@ -28,24 +28,47 @@ img {
     margin-left: auto;
 }
 
-.header {
-    width: 100%;
-    height: 10%;
+#space-top{
+    height:2%
 }
 
+.header {
+    width: 100%;
+    height: 8%;
+}
 
 #club-gen {
     height: 85%;
 }
 
 .title-selection {
-    width: 40%;
+    width: 39%;
+    height: 100%;
     float: left;
 }
 
 .logo {
-    width: 60%;
-    float: right;
+    width: 58%;
+    height: 100%;
+    float: left;
+}
+
+#space-left{
+    width: 1%;
+    height: 100%;
+    float: left;
+}
+
+#space-middle{
+    width: 1%;
+    height: 100%;
+    float: left;
+}
+
+#space-right{
+    width: 1%;
+    height: 100%;
+    float: left;
 }
 
 #selected-parts{
@@ -56,23 +79,31 @@ img {
     margin-left: auto;
 }
 
-#selected-parts span{
+.selected-parts{
     display: inline-block;
     /*width: 100%;*/
     text-align: left;
     margin-top:15px;
 }
 
-.logo img {
-    margin-top: 20px;
+.henrys-logo{
+    display: inline-block;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/Henrys_Logo.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100% auto;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
 }
 
 .title {
-    margin-left: 15px;
-    margin-top: 20px;
+    /*margin-left: 15px;*/
+    /*margin-top: 20px;*/
+    margin-bottom: 5px;
     font-size: 24px;
 }
 
@@ -82,8 +113,8 @@ img {
 }
 
 .selection-header {
-    margin-left: 15px;
-    margin-top: 10px;
+    /*margin-left: 15px;
+    margin-top: 10px;*/
 }
 
 .selection-header span {
@@ -99,35 +130,36 @@ img {
 .dropdown {
     display: inline-block;
 }
+
 #selected-title{
     margin-left: 15px;
     float:left;
-    width: 16%;
+    width: 10%;
 }
 
 #selected-knob{
     float:left;
-    width: 16%;
+    width: 17%;
 }
 
 #selected-grip{
     float:left;
-    width: 16%;
+    width: 17%;
 }
 
 #selected-tape{
     float:left;
-    width: 16%;
+    width: 18%;
 }
 
 #selected-body{
     float:left;
-    width: 16%;
+    width: 17%;
 }
 
 #selected-top{
     float:left;
-    width: 16%;
+    width: 17%;
 }
 
 .club-pics{
@@ -223,366 +255,87 @@ img {
 
 /* Adjust to different screen sizes */
 
-@media screen and (max-width: 720px) and (min-width: 456px) {
+@media screen and (max-width: 800px) {
 
-    .header {
-        width: 100%;
-        margin: 0 auto;
-        height: 15vh;
-    }
-
-    .title-selection {
-        margin-top: 5px;
-        height: 40%;
-        width: 100%;
-        float: left;
-    }
-
-    .logo {
-        padding-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        height: 50%;
-        width: 100%;
-        float: none;
-    }
-
-    .logo img {
-        padding-top: 5px;
-        padding-left: 5px;
-        padding-right: 0;
-    }
-
-    .title {
-        display: inline-block;
-        padding-top: 10px;
-        padding-left: 5px;
-
-        font-size: 18px;
-        float: left;
-    }
-
-    .title h3 {
-        padding-left: 10px;
-        line-height: 18px;
-        margin: 0;
-    }
-
-    .selection-header {
-        float: right;
-        padding-top: 8px;
-        padding-left: 0px;
-        padding-right: 10px;
-        display: inline-block;
-    }
-
-    .selection-header p {
-        display: inline-block;
-    }
-
-    .dropdown {
-        display: inline-block;
-    }
-
-    .button-pos-knob {
-        top: 25%;
-    }
-
-    .button-pos-grip {
-        top: 40%;
-    }
-
-    .button-pos-tape {
-        top: 55%;
-    }
-
-    .button-pos-body {
-        top: 76%;
-    }
-
-    .button-pos-top {
-        top: 95%;
-    }
-
-}
-
-@media screen and (max-width: 455px) and (min-width: 0px) {
-
-    #club-generator {
-        width: 100vw;
-        min-width: 320px;
-        min-height: 480px;
-        max-width: 1000px;
-        height: 100vh;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .header {
-        padding: 0;
-        margin: 0;
-        height: 15vh;
-    }
-
-    .logo {
-        padding-top: 0;
-        height: 70%;
-        width: 100%;
-        float: right;
-    }
-
-    .logo img {
-        padding-top: 15px;
-
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .title-selection {
-        margin-top: 0;
-        height: 40%;
-        width: 100%;
-        float: left;
-    }
-
-    .selection-header {
-        padding-top: 8px;
-        padding-left: 10px;
-    }
-
-    .title {
+    #selected-title{
         display: none;
+        float:left;
+        width: 0%;
     }
 
-    .title h3 {
-        display: none;
+    #selected-knob{
+        float:left;
+        width: 20%;
     }
 
-    .button-pos-knob {
-        top: 21%;
+    #selected-grip{
+        float:left;
+        width: 20%;
     }
 
-    .button-pos-grip {
-        top: 40%;
+    #selected-tape{
+        float:left;
+        width: 20%;
     }
 
-    .button-pos-tape {
-        top: 54%;
+    #selected-body{
+        float:left;
+        width: 20%;
     }
 
-    .button-pos-body {
-        top: 74%;
+    #selected-top{
+        float:left;
+        width: 19%;
     }
 
-    .button-pos-top {
-        top: 95%;
+    #selection-menu{
+        margin-left:5px;
+    }
+
+    .henrys-logo{
+        background-image: url("/img/Henrys_Logo_small.png");
+        background-size: auto 82%;
     }
 }
 
-@media screen and (max-height: 580px) and (min-height: 0px)and  (max-width: 1000px) and (min-width: 0px) {
+@media screen and (max-width: 700px) {
 
-    .header {
-        padding: 0;
-        margin: 0;
-        height: 15vh;
+    #selected-parts{
+        visibility: hidden;
+        height: 0px;
     }
 
-    .logo {
-        width: 40%;
-        float: right;
-    }
-
-    .logo img {
-        padding-top: 10px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .title {
-        display: none;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .title h3 {
-        display: none;
-        padding-top: 0;
-        padding-bottom: 0;
+    #selected-parts span{
+        display:none;
     }
 
     .title-selection {
-        margin-top: 0;
-        height: 40%;
+        width: 37%;
+    }
+
+    .logo{
         width: 60%;
         float: left;
     }
 
-    .selection-header {
-        padding-top: 8px;
-        padding-left: 10px;
-        float: left;
-    }
-
-    .button-pos-knob {
-        top: 22%;
-    }
-
-    .button-pos-grip {
-        top: 40%;
-    }
-
-    .button-pos-tape {
-        top: 56.5%;
-    }
-
-    .button-pos-body {
-        top: 76%;
-    }
-
-    .button-pos-top {
-        top: 95%;
+    #club-gen{
+        height: 90%;
     }
 }
 
-@media screen and (max-height: 400px) and (min-height: 0px) and (max-width: 480px) and (min-width: 0px) {
-
-    #header {
-        padding: 0;
-        margin: 0;
-        height: 15vh;
-    }
-
-    .logo {
-        width: 50%;
-        float: right;
-    }
-
-    .logo img {
-        padding-top: 10px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .title {
-        display: none;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .title h3 {
-        display: none;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+@media screen and (max-width: 580px) {
 
     .title-selection {
-        margin-top: 0;
-        height: 40%;
         width: 50%;
+    }
+
+    .logo{
+        width: 47%;
         float: left;
     }
 
-    .selection-header {
-        padding-top: 0;
-        padding-left: 10px;
-        float: left;
-    }
-
-    .button-pos-knob {
-        top: 25%;
-    }
-
-    .button-pos-grip {
-        top: 40%;
-    }
-
-    .button-pos-tape {
-        top: 60%;
-    }
-
-    .button-pos-body {
-        top: 80%;
-    }
-
-    .button-pos-top {
-        top: 96%;
+    .henrys-logo{
+        background-image: url("/img/Henrys_Logo_small.png");
+        background-size: auto 80%;
     }
 }
-
-@media screen and (max-height: 400px) and (min-height: 0px) {
-
-    .button-pos-knob {
-        top: 25%;
-    }
-
-    .button-pos-grip {
-        top: 40%;
-    }
-
-    .button-pos-tape {
-        top: 60%;
-    }
-
-    .button-pos-body {
-        top: 80%;
-    }
-
-    .button-pos-top {
-        top: 96%;
-    }
-}
-
-@media screen and (max-height: 540px) and (min-height: 401px) {
-
-    .button-pos-knob {
-        top: 22%;
-    }
-
-    .button-pos-grip {
-        top: 40%;
-    }
-
-    .button-pos-tape {
-        top: 58%;
-    }
-
-    .button-pos-body {
-        top: 78%;
-    }
-
-    .button-pos-top {
-        top: 96%;
-    }
-}
-
-@media screen and (max-height: 720px) and (min-height: 541px) {
-
-    .logo img {
-        padding-top: 5px;
-    }
-
-    .selection-header {
-        padding-top: 5px;
-    }
-
-    .button-pos-knob {
-        top: 21%;
-    }
-
-    .button-pos-grip {
-        top: 38%;
-    }
-
-    .button-pos-tape {
-        top: 55.5%;
-    }
-
-    .button-pos-body {
-        top: 77%;
-    }
-
-    .button-pos-top {
-        top: 96%;
-    }
-}
-
