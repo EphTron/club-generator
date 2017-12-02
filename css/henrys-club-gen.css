@@ -22,19 +22,15 @@ img {
     width: 100%;
     height: 100%;
     max-width: 900px;
-    min-width: 320px;
+    min-width: 400px;
     min-height: 320px;
     margin-right: auto;
     margin-left: auto;
 }
 
-#space-top{
-    height:2%
-}
-
 .header {
     width: 100%;
-    height: 8%;
+    height: 10%;
 }
 
 #club-gen {
@@ -42,33 +38,23 @@ img {
 }
 
 .title-selection {
-    width: 39%;
+    width: 35%;
     height: 100%;
     float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
 }
 
 .logo {
-    width: 58%;
+    width: 65%;
     height: 100%;
     float: left;
-}
-
-#space-left{
-    width: 1%;
-    height: 100%;
-    float: left;
-}
-
-#space-middle{
-    width: 1%;
-    height: 100%;
-    float: left;
-}
-
-#space-right{
-    width: 1%;
-    height: 100%;
-    float: left;
+    padding-top: 15px;
+    padding-right:10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
 }
 
 #selected-parts{
@@ -101,9 +87,7 @@ img {
 }
 
 .title {
-    /*margin-left: 15px;*/
-    /*margin-top: 20px;*/
-    margin-bottom: 5px;
+    padding-bottom: 5px;
     font-size: 24px;
 }
 
@@ -292,9 +276,18 @@ img {
         margin-left:5px;
     }
 
+
+    .title-selection {
+        width: 40%;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
     .henrys-logo{
         background-image: url("/img/Henrys_Logo_small.png");
-        background-size: auto 82%;
+        background-size: auto 83%;
     }
 }
 
@@ -309,33 +302,107 @@ img {
         display:none;
     }
 
-    .title-selection {
-        width: 37%;
-    }
-
-    .logo{
-        width: 60%;
-        float: left;
-    }
-
     #club-gen{
         height: 90%;
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 620px) {
 
     .title-selection {
-        width: 50%;
+        width: 45%;
     }
 
     .logo{
-        width: 47%;
-        float: left;
+        width: 55%;
     }
 
     .henrys-logo{
         background-image: url("/img/Henrys_Logo_small.png");
-        background-size: auto 80%;
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) and (min-width: 400px){
+
+    .title {
+        padding-bottom: 5px;
+        font-size:  100%;
+    }
+
+    #choose_club span{
+        display: none;
+    }
+
+    #selection-menu{
+        margin-left: 0px;
+    }
+
+    .title-selection {
+        width: 30%;
+    }
+
+    .logo{
+        width: 70%;
+    }
+
+    .henrys-logo{
+        background-image: url("/img/Henrys_Logo_small.png");
+        background-size: auto 83%;
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    .title {
+        padding-bottom: 5px;
+        font-size:  100%;
+    }
+
+    #choose_club span{
+        display: none;
+    }
+
+    #selection-menu{
+        margin-left: 0px;
+    }
+
+    .title-selection {
+        width: 30%;
+        padding-left: 5px;
+    }
+
+    .logo{
+        width: 70%;
+        padding-right: 5px;
+        padding-top: 20px;
+    }
+
+    .henrys-logo{
+        background-image: url("/img/Henrys_Logo_small.png");
+        background-size: auto 83%;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .title {
+        padding-bottom: 0px;
+        font-size:  13px;
+    }
+
+    .title-selection {
+        width: 35%;
+    }
+
+    .logo{
+        width: 65%;
+        padding-left: 10px;
+    }
+
+    .henrys-logo{
+
+        background-image: url("/img/Henrys_Logo_small.png");
+        background-size: 100%;
     }
 }

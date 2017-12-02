@@ -16,18 +16,12 @@
 <body>
 <div id="club-generator">
     <div class="header">
-        <div class="logo" id="logo">
-            <a href="https://www.henrys-online.de/en/shop/juggling/juggling-clubs/individual-clubs/">
-                <img src="img/Henrys_Logo.png" draggable="false">
-            </a>
-        </div>
-        <div id="space-1"></div>
         <div class="title-selection">
             <div class="title">
                 <h3>Choose your club</h3>
             </div>
             <div class="selection-header" id="choose_club">
-                <span>Club typ:</span>
+                <span>Club type:</span>
                 <div id="selection-menu" class="dropdown">
                     <select id="club-selector">
                         <option>Pirouette</option>
@@ -43,7 +37,10 @@
                 </div>
             </div>
         </div>
-        <div id="space-2"></div>
+        <div class="logo" id="logo">
+            <a href="https://www.henrys-online.de/en/shop/juggling/juggling-clubs/individual-clubs/" class="henrys-logo">
+            </a>
+        </div>
     </div>
 
     <div id="club-gen">
@@ -51,12 +48,12 @@
     </div>
 
     <div id="selected-parts">
-        <span id="selected-title">Current Parts:</span>
-        <span id="selected-knob">Knob grün</span>
-        <span id="selected-grip">Griff rot</span>
-        <span id="selected-tape">Tape schwarz</span>
-        <span id="selected-body">Korpus blau</span>
-        <span id="selected-top">Top schwarz</span>
+        <span class="selected-parts" id="selected-title">Club parts:</span>
+        <span class="selected-parts" id="selected-knob">Knob</span>
+        <span class="selected-parts" id="selected-grip">Grip</span>
+        <span class="selected-parts" id="selected-tape">Tape</span>
+        <span class="selected-parts" id="selected-body">Body</span>
+        <span class="selected-parts" id="selected-top">Top</span>
     </div>
 
 </div>
