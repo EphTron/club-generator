@@ -22,7 +22,7 @@ img {
     width: 100%;
     height: 100%;
     max-width: 900px;
-    min-width: 400px;
+    min-width: 320px;
     min-height: 320px;
     margin-right: auto;
     margin-left: auto;
@@ -30,18 +30,18 @@ img {
 
 .header {
     width: 100%;
-    height: 10%;
+    height: 11%;
 }
 
 #club-gen {
-    height: 85%;
+    height: 84%;
 }
 
 .title-selection {
     width: 35%;
     height: 100%;
     float: left;
-    padding-top: 15px;
+    padding-top: 13px;
     padding-left: 10px;
     padding-bottom: 5px;
     box-sizing: border-box;
@@ -51,13 +51,13 @@ img {
     width: 65%;
     height: 100%;
     float: left;
-    padding-top: 15px;
-    padding-right:10px;
+    padding-top: 13px;
+    padding-right: 10px;
     padding-bottom: 5px;
     box-sizing: border-box;
 }
 
-#selected-parts{
+#selected-parts {
     height: 5%;
     width: 100%;
     float: left;
@@ -65,14 +65,14 @@ img {
     margin-left: auto;
 }
 
-.selected-parts{
+.selected-parts {
     display: inline-block;
     /*width: 100%;*/
     text-align: left;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
-.henrys-logo{
+.henrys-logo {
     display: inline-block;
     background-color: #fff;
     width: 100%;
@@ -107,59 +107,58 @@ img {
     line-height: 14px;
 }
 
-#selection-menu{
-    margin-left: 15px;
+#selection-menu {
+    margin-left: 30px;
 }
 
 .dropdown {
     display: inline-block;
 }
 
-#selected-title{
+#selected-title {
     margin-left: 15px;
-    float:left;
+    float: left;
     width: 10%;
 }
 
-#selected-knob{
-    float:left;
+#selected-knob {
+    float: left;
     width: 17%;
 }
 
-#selected-grip{
-    float:left;
+#selected-grip {
+    float: left;
     width: 17%;
 }
 
-#selected-tape{
-    float:left;
+#selected-tape {
+    float: left;
     width: 18%;
 }
 
-#selected-body{
-    float:left;
+#selected-body {
+    float: left;
     width: 17%;
 }
 
-#selected-top{
-    float:left;
+#selected-top {
+    float: left;
     width: 17%;
 }
 
-.club-pics{
+.club-pics {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
 }
 
-.swiper-container-knob{
+.swiper-container-knob {
     z-index: 40;
 }
 
-.swiper-container-grip{
+.swiper-container-grip {
     z-index: 30;
 }
-
 
 /* Set Containers Styles*/
 
@@ -238,44 +237,42 @@ img {
 }
 
 /* Adjust to different screen sizes */
-
 @media screen and (max-width: 800px) {
-
-    #selected-title{
+    /* Don't show club parts title and give each part more space*/
+    #selected-title {
         display: none;
-        float:left;
+        float: left;
         width: 0%;
     }
 
-    #selected-knob{
-        float:left;
+    #selected-knob {
+        float: left;
         width: 20%;
     }
 
-    #selected-grip{
-        float:left;
+    #selected-grip {
+        float: left;
         width: 20%;
     }
 
-    #selected-tape{
-        float:left;
+    #selected-tape {
+        float: left;
         width: 20%;
     }
 
-    #selected-body{
-        float:left;
+    #selected-body {
+        float: left;
         width: 20%;
     }
 
-    #selected-top{
-        float:left;
+    #selected-top {
+        float: left;
         width: 19%;
     }
 
-    #selection-menu{
-        margin-left:5px;
+    #selection-menu {
+        margin-left: 30px;
     }
-
 
     .title-selection {
         width: 40%;
@@ -285,7 +282,7 @@ img {
         width: 60%;
     }
 
-    .henrys-logo{
+    .henrys-logo {
         background-image: url("/img/Henrys_Logo_small.png");
         background-size: auto 83%;
     }
@@ -293,16 +290,36 @@ img {
 
 @media screen and (max-width: 700px) {
 
-    #selected-parts{
+    #selected-parts {
         visibility: hidden;
         height: 0px;
     }
 
-    #selected-parts span{
-        display:none;
+    #selected-parts span {
+        display: none;
     }
 
-    #club-gen{
+    .button-pos-knob {
+        top: 13.7%;
+    }
+
+    .button-pos-grip {
+        top: 30.5%;
+    }
+
+    .button-pos-tape {
+        top: 52%;
+    }
+
+    .button-pos-body {
+        top: 74%;
+    }
+
+    .button-pos-top {
+        top: 97%;
+    }
+
+    #club-gen {
         height: 90%;
     }
 }
@@ -313,57 +330,27 @@ img {
         width: 45%;
     }
 
-    .logo{
+    .logo {
         width: 55%;
     }
 
-    .henrys-logo{
-        background-image: url("/img/Henrys_Logo_small.png");
+    .henrys-logo {
         background-size: 100%;
     }
 }
 
-@media screen and (max-width: 560px) and (min-width: 400px){
+@media screen and (max-width: 560px) {
 
     .title {
         padding-bottom: 5px;
-        font-size:  100%;
+        font-size: 100%;
     }
 
-    #choose_club span{
+    #choose_club span {
         display: none;
     }
 
-    #selection-menu{
-        margin-left: 0px;
-    }
-
-    .title-selection {
-        width: 30%;
-    }
-
-    .logo{
-        width: 70%;
-    }
-
-    .henrys-logo{
-        background-image: url("/img/Henrys_Logo_small.png");
-        background-size: auto 83%;
-    }
-}
-
-@media screen and (max-width: 560px){
-
-    .title {
-        padding-bottom: 5px;
-        font-size:  100%;
-    }
-
-    #choose_club span{
-        display: none;
-    }
-
-    #selection-menu{
+    #selection-menu {
         margin-left: 0px;
     }
 
@@ -372,37 +359,461 @@ img {
         padding-left: 5px;
     }
 
-    .logo{
+    .logo {
         width: 70%;
         padding-right: 5px;
         padding-top: 20px;
     }
 
-    .henrys-logo{
-        background-image: url("/img/Henrys_Logo_small.png");
+    .henrys-logo {
         background-size: auto 83%;
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 
     .title {
         padding-bottom: 0px;
-        font-size:  13px;
+        font-size: 13px;
     }
 
     .title-selection {
         width: 35%;
     }
 
-    .logo{
+    .logo {
         width: 65%;
         padding-left: 10px;
     }
 
-    .henrys-logo{
-
-        background-image: url("/img/Henrys_Logo_small.png");
+    .henrys-logo {
         background-size: 100%;
     }
 }
+
+@media screen and (max-height: 820px) and (min-width: 700px) {
+
+    .header {
+        height: 12%;
+    }
+
+    #club-gen {
+        height: 83%;
+    }
+
+    .button-pos-knob {
+        top: 14.5%;
+    }
+
+    .button-pos-grip {
+        top: 30%;
+    }
+
+    .button-pos-tape {
+        top: 51.5%;
+    }
+
+    .button-pos-body {
+        top: 72.5%;
+    }
+
+    .button-pos-top {
+        top: 93%;
+    }
+}
+
+@media screen and (max-height: 820px) and (max-width: 700px) {
+
+    .title-selection {
+        padding-top: 3px;
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    .header {
+        height: 11%;
+    }
+
+    #club-gen {
+        height: 89%;
+    }
+
+    .button-pos-knob {
+        top: 14%;
+    }
+
+    .button-pos-grip {
+        top: 31.5%;
+    }
+
+    .button-pos-tape {
+        top: 53.3%;
+    }
+
+    .button-pos-body {
+        top: 75.5%;
+    }
+
+    .button-pos-top {
+        top: 97%;
+    }
+}
+
+@media screen and (max-height: 700px) and (min-width: 700px) {
+
+    .title-selection {
+        padding-top: 10px;
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    .header {
+        height: 13%;
+    }
+
+    #club-gen {
+        height: 82%;
+    }
+
+    .button-pos-knob {
+        top: 16%;
+    }
+
+    .button-pos-grip {
+        top: 32.5%;
+    }
+
+    .button-pos-tape {
+        top: 52.5%;
+    }
+
+    .button-pos-body {
+        top: 74%;
+    }
+
+    .button-pos-top {
+        top: 94%;
+    }
+
+    .selected-parts {
+        margin-top: 0px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-height: 700px) and (max-width: 700px) {
+
+    .title-selection {
+        padding-top: 10px;
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    .header {
+        height: 13%;
+    }
+
+    #club-gen {
+        height: 87%;
+    }
+
+    .button-pos-knob {
+        top: 16%;
+    }
+
+    .button-pos-grip {
+        top: 34.5%;
+    }
+
+    .button-pos-tape {
+        top: 54.5%;
+    }
+
+    .button-pos-body {
+        top: 77%;
+    }
+
+    .button-pos-top {
+        top: 98.5%;
+    }
+
+    .selected-parts {
+        margin-top: 0px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-height: 630px) and (min-width: 700px) {
+
+    .title-selection {
+        padding-top: 10px;
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    .header {
+        height: 16%;
+    }
+
+    #club-gen {
+        height: 79%;
+    }
+
+    .button-pos-knob {
+        top: 19.2%;
+    }
+
+    .button-pos-grip {
+        top: 34.5%;
+    }
+
+    .button-pos-tape {
+        top: 54.2%;
+    }
+
+    .button-pos-body {
+        top: 74.5%;
+    }
+
+    .button-pos-top {
+        top: 94%;
+    }
+
+    .selected-parts {
+        margin-top: 0px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-height: 540px) and (min-width: 700px) {
+
+    .title-selection {
+        padding-top: 5px;
+    }
+
+    .logo {
+        padding-top: 5px;
+    }
+
+    .header {
+        height: 18%;
+    }
+
+    #club-gen {
+        height: 77%;
+    }
+
+    .button-pos-knob {
+        top: 21.7%;
+    }
+
+    .button-pos-grip {
+        top: 38.5%;
+    }
+
+    .button-pos-tape {
+        top: 55.6%;
+    }
+
+    .button-pos-body {
+        top: 75%;
+    }
+
+    .button-pos-top {
+        top: 94%;
+    }
+
+    .selected-parts {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-height: 540px) and (max-width: 700px) {
+
+    .title-selection {
+        padding-top: 5px;
+    }
+
+    .logo {
+        padding-top: 5px;
+    }
+
+    .header {
+        height: 16%;
+    }
+
+    #club-gen {
+        height: 84%;
+    }
+
+    .button-pos-knob {
+        top: 20.7%;
+    }
+
+    .button-pos-grip {
+        top: 38%;
+    }
+
+    .button-pos-tape {
+        top: 58%;
+    }
+
+    .button-pos-body {
+        top: 78%;
+    }
+
+    .button-pos-top {
+        top: 99%;
+    }
+
+    .selected-parts {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-height: 400px) and (max-width: 700px) {
+
+    .title {
+        display: none;
+    }
+
+    .title-selection {
+        padding-top: 10px;
+        width: 45%;
+    }
+
+    .logo {
+        width: 55%;
+        padding-left: 10px;
+    }
+
+    .title-selection {
+        padding-top: 5px;
+    }
+
+    .header {
+        height: 16%;
+    }
+
+    #club-gen {
+        height: 84%;
+    }
+
+    .button-pos-knob {
+        top: 20.7%;
+    }
+
+    .button-pos-grip {
+        top: 38%;
+    }
+
+    .button-pos-tape {
+        top: 58%;
+    }
+
+    .button-pos-body {
+        top: 78%;
+    }
+
+    .button-pos-top {
+        top: 99%;
+    }
+
+    .selected-parts {
+        padding-top: 5px;
+    }
+
+    .henrys-logo {
+        background-size: auto 100%;
+    }
+}
+
+@media screen and (max-height: 700px) and (max-width: 400px) {
+
+    .title-selection {
+        padding-top: 10px;
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    .header {
+        height: 9%;
+    }
+
+    #club-gen {
+        height: 91%;
+    }
+
+    .button-pos-knob {
+        top: 12.8%;
+    }
+
+    .button-pos-grip {
+        top: 31.5%;
+    }
+
+    .button-pos-tape {
+        top: 53.3%;
+    }
+
+    .button-pos-body {
+        top: 76.5%;
+    }
+
+    .button-pos-top {
+        top: 98%;
+    }
+
+    .selected-parts {
+        margin-top: 0px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-height: 1120px) {
+
+    .title {
+        padding-bottom: 10px;
+    }
+
+    .henrys-logo {
+        background-size: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .title {
+        display: none;
+    }
+
+    .title-selection {
+        padding-top: 10px;
+        width: 45%;
+    }
+
+    .logo {
+        width: 55%;
+        padding-left: 10px;
+    }
+
+    .henrys-logo {
+        background-size: 100%;
+    }
+}
+

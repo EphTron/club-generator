@@ -10,7 +10,7 @@
  *
  * Licensed under MIT
  *
- * Released on: November 22, 2017
+ * Released on: Dez 4, 2017
  */
 
 
@@ -505,13 +505,10 @@ function create_club_part(parent, club_part, name_id, fold, items) {
 
     var dir = "img/";
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        dir = "img_sml/";
-        console.log("Mobile");
-        alert("Mobile");
-    } else {
-        console.log("Not mobile");
+        if (screen.height < 1100){
+            dir = "img_sml/";
+        }
     }
-
     items.forEach(function (item) {
         var final_url = dir + fold + "/" + item;
         var image_string = '<img id="img-club-' + club_part + '" ' +
