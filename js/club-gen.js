@@ -36,9 +36,9 @@ function choose_club_typ(lang) {
         if (selected_club === "Pirouette") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                "18239_KnobRund_gruen.gif",
-                "18240_KnobRund_orange.gif",
-                "18238_KnobRund_blau.gif",
+                // "18239_KnobRund_gruen.gif",
+                // "18240_KnobRund_orange.gif",
+                // "18238_KnobRund_blau.gif",
                 "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
                 "11709_KnobDelphin_weiß.gif",
@@ -88,9 +88,9 @@ function choose_club_typ(lang) {
         } else if (selected_club === "Pirouette Grip") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                "18239_KnobRund_gruen.gif",
-                "18240_KnobRund_orange.gif",
-                "18238_KnobRund_blau.gif",
+                // "18239_KnobRund_gruen.gif",
+                // "18240_KnobRund_orange.gif",
+                // "18238_KnobRund_blau.gif",
                 "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
                 "11709_KnobDelphin_weiß.gif",
@@ -122,7 +122,7 @@ function choose_club_typ(lang) {
                 "17784_KorpusGrip_orange.gif",
                 "17788_KorpusGrip_gruen.gif",
                 "19151_KorpusGrip_blau.gif",
-                "19242_KorpusGrip_pink.gif"
+                "19242_KorpusGrip_pink.gif",
                 //"19717_KorpusGrip_tuerkis.gif"
             ];
 
@@ -138,9 +138,11 @@ function choose_club_typ(lang) {
             create_club("piro-grip");
         } else if (selected_club === "Classic Short") {
 
-            paths['knob_items'] = ["18238_KnobRund_blau.gif",
-                "18239_KnobRund_gruen.gif",
-                "18240_KnobRund_orange.gif",
+            paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
+                // "18239_KnobRund_gruen.gif",
+                // "18240_KnobRund_orange.gif",
+                // "18238_KnobRund_blau.gif",
+                "11707_KnobRund_weiß.gif",
                 "18209_KnobClassic_blau.gif",
                 "18210_KnobClassic_gruen.gif",
                 "19636_KnobClassic_rot.gif",
@@ -185,9 +187,11 @@ function choose_club_typ(lang) {
             create_club("short");
         } else if (selected_club === "Classic Long") {
 
-            paths['knob_items'] = ["18238_KnobRund_blau.gif",
-                "18239_KnobRund_gruen.gif",
-                "18240_KnobRund_orange.gif",
+            paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
+                // "18239_KnobRund_gruen.gif",
+                // "18240_KnobRund_orange.gif",
+                // "18238_KnobRund_blau.gif",
+                "11707_KnobRund_weiß.gif",
                 "18209_KnobClassic_blau.gif",
                 "18210_KnobClassic_gruen.gif",
                 "19636_KnobClassic_rot.gif",
@@ -233,9 +237,9 @@ function choose_club_typ(lang) {
         } else if (selected_club === "Mirage") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                "18239_KnobRund_gruen.gif",
-                "18240_KnobRund_orange.gif",
-                "18238_KnobRund_blau.gif",
+                // "18239_KnobRund_gruen.gif",
+                // "18240_KnobRund_orange.gif",
+                // "18238_KnobRund_blau.gif",
                 "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
                 "11709_KnobDelphin_weiß.gif",
@@ -285,9 +289,9 @@ function choose_club_typ(lang) {
         } else if (selected_club === "Albatros") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                "18239_KnobRund_gruen.gif",
-                "18240_KnobRund_orange.gif",
-                "18238_KnobRund_blau.gif",
+                // "18239_KnobRund_gruen.gif",
+                // "18240_KnobRund_orange.gif",
+                // "18238_KnobRund_blau.gif",
                 "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
                 "11709_KnobDelphin_weiß.gif",
@@ -337,9 +341,9 @@ function choose_club_typ(lang) {
         } else if (selected_club === "Delphin") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                "18239_KnobRund_gruen.gif",
-                "18240_KnobRund_orange.gif",
-                "18238_KnobRund_blau.gif",
+                // "18239_KnobRund_gruen.gif",
+                // "18240_KnobRund_orange.gif",
+                // "18238_KnobRund_blau.gif",
                 "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
                 "11709_KnobDelphin_weiß.gif",
@@ -377,9 +381,9 @@ function choose_club_typ(lang) {
         } else if (selected_club === "Loop") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                "18239_KnobRund_gruen.gif",
-                "18240_KnobRund_orange.gif",
-                "18238_KnobRund_blau.gif",
+                // "18239_KnobRund_gruen.gif",
+                // "18240_KnobRund_orange.gif",
+                // "18238_KnobRund_blau.gif",
                 "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
                 "11709_KnobDelphin_weiß.gif",
@@ -398,13 +402,8 @@ function choose_club_typ(lang) {
                 "19658_Griff_Loop_pink.gif",
                 "19659_Griff_Loop_rot.gif"];
 
-            paths['tape_items'] = ["11226_Tape_schwarz.gif",
-                "11225_Tape_weiß.gif",
-                "18956_Tape_gelb.gif",
-                "18957_Tape_pink.gif",
-                "18958_Tape_orange.gif",
-                "18959_Tape_gruen.gif",
-                "19438_Tape_blau.gif"];
+            paths['tape_items'] = ["11091_DelphinRing_schwarz.gif",
+                "18864_DelphinRing_weiß.gif"];
 
             paths['body_items'] = ["11077_KorpusKurz_blau.gif",
                 "11071_KorpusKurz_weiß.gif",
@@ -440,22 +439,17 @@ function choose_club_typ(lang) {
                 "19635_KnobDelphin_rot.gif",
                 "19638_KnobDelphin_pink.gif"];
 
-            paths['grip_items'] = ["19656_Griff_Loop_tuerkis.gif",
+            paths['grip_items'] = ["19653_Griff_Loop_blau.gif",
                 "19652_Griff_Loop_weiß.gif",
-                "19653_Griff_Loop_blau.gif",
                 "19654_Griff_Loop_gelb.gif",
                 "19655_Griff_Loop_gruen.gif",
+                //"19656_Griff_Loop_tuerkis.gif",
                 "19657_Griff_Loop_orange.gif",
                 "19658_Griff_Loop_pink.gif",
                 "19659_Griff_Loop_rot.gif"];
 
-            paths['tape_items'] = ["11226_Tape_schwarz.gif",
-                "11225_Tape_weiß.gif",
-                "18956_Tape_gelb.gif",
-                "18957_Tape_pink.gif",
-                "18958_Tape_orange.gif",
-                "18959_Tape_gruen.gif",
-                "19438_Tape_blau.gif"];
+            paths['tape_items'] = ["11091_DelphinRing_schwarz.gif",
+                "18864_DelphinRing_weiß.gif"];
 
             paths['body_items'] = ["19151_KorpusGrip_blau.gif",
                 "17701_KorpusGrip_weiß.gif",
