@@ -23,7 +23,7 @@ img {
     height: 100%;
     max-width: 900px;
     min-width: 320px;
-    min-height: 320px;
+    min-height: 200px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -814,6 +814,51 @@ img {
 
     .henrys-logo {
         background-size: 100%;
+    }
+}
+
+@media screen and (max-height: 300px) {
+
+    .title-selection {
+        padding-top: 2px;
+    }
+
+    .logo {
+        padding-top: 2px;
+    }
+
+    .header {
+        height: 15%;
+    }
+
+    #club-gen {
+        height: 85%;
+    }
+
+    .button-pos-knob {
+        top: 22.8%;
+    }
+
+    .button-pos-grip {
+        top: 39%;
+    }
+
+    .button-pos-tape {
+        top: 56.3%;
+    }
+
+    .button-pos-body {
+        top: 78.5%;
+    }
+
+    .button-pos-top {
+        top: 99%;
+    }
+
+    .selected-parts {
+        margin-top: 0px;
+        padding-top: 5px;
+        box-sizing: border-box;
     }
 }
 

@@ -488,10 +488,6 @@ document.getElementById("club-selector").addEventListener('click', function () {
     choose_club_typ(language);
 }, false);
 
-document.getElementById("club-selector").on('touchstart', function() {
-    choose_club_typ(language);
-});
-
 function create_club_part(parent, club_part, name_id, fold, items) {
     var parent_element = document.getElementById(parent);
 
@@ -684,6 +680,5 @@ function adjust_language(word_list){
             adjusted_word_list.push(w);
         });
     }
-    console.log("word list", adjusted_word_list);
     return adjusted_word_list
 }
