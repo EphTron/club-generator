@@ -32,7 +32,7 @@
 /* length of club in pixels 4925
    Pirouette*/
 #club-knob-piro {
-    height: 4.81309%;
+    height: 4.61309%;
     margin-bottom: -0.185vh;
     z-index: 40;
 }
@@ -60,7 +60,7 @@
 /* length of club in pixels 4925
    Pirouette Grip*/
 #club-knob-piro-grip {
-    height: 4.81309%;
+    height: 4.61309%;
     margin-bottom: -0.185vh;
     z-index: 40;
 }
@@ -88,7 +88,7 @@
 /* length of club in pixels 4925
    Classic Short,*/
 #club-knob-short {
-    height: 4.81309%;
+    height: 4.61309%;
     margin-bottom: -0.185vh;
     z-index: 40;
 }
@@ -116,7 +116,7 @@
 /* length of club in pixels 5175
   Classic Long*/
 #club-knob-long {
-    height: 4.63768%;
+    height: 4.43768%;
     margin-bottom: -0.3vh;
     z-index: 40;
 }
@@ -142,7 +142,7 @@
 /* length of club in pixels 4875
   Mirage,*/
 #club-knob-mirage {
-    height: 4.82307%;
+    height: 4.54307%;
     margin-bottom: -0.2vh;
     z-index: 40;
 }
@@ -170,7 +170,7 @@
 /* length of club in pixels 5175
   Albatros*/
 #club-knob-alba {
-    height: 4.63770%;
+    height: 4.43770%;
     margin-bottom: -0.25vh;
     z-index: 40;
 }
@@ -198,7 +198,7 @@
 /* length of club in pixels 4950
   Delphin*/
 #club-knob-delphin {
-    height: 4.848484%;
+    height: 4.548484%;
     margin-bottom: -0.20vh;
     z-index: 40;
 }
@@ -225,55 +225,55 @@
 /* length of club in pixels 4925
    Loop*/
 #club-knob-loop {
-    height: 4.81309%;
-    margin-bottom: -0.185vh;
+    height: 4.49795%;
+    margin-bottom: -0.25vh;
     z-index: 40;
 }
 
 #club-grip-loop {
-    height: 40.54913%;
+    height: 40.81632%;
     z-index: 38;
     margin-bottom: -0.05vh;
 }
 
 #club-tape-loop {
-    height: 3.53329%;
+    height: 3.00000%;
     margin-bottom: -0.05vh;
 }
 
 #club-body-loop {
-    height: 48.97099%;
+    height: 48.97959%;
 }
 
 #club-top-loop {
     margin-top: -0.75vh;
-    height: 2.13350%;
+    height: 2.24489%;
 }
 
 /* length of club in pixels 4925
    Loop Grip*/
 #club-knob-loop-grip {
-    height: 4.81309%;
+    height: 4.49795%;
     margin-bottom: -0.25vh;
     z-index: 40;
 }
 
 #club-grip-loop-grip {
-    height: 40.54913%;
+    height: 40.81632%;
     z-index: 38;
     margin-bottom: -0.05vh;
 }
 
 #club-tape-loop-grip {
-    height: 3.60329%;
+    height: 3.00000%;
     margin-bottom: -0.05vh;
 }
 
 #club-body-loop-grip {
-    height: 48.90099%;
+    height: 48.97959%;
 }
 
 #club-top-loop-grip {
     margin-top: -0.75vh;
-    height: 2.13350%;
+    height: 2.24489%;
 }
