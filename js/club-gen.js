@@ -480,13 +480,17 @@ function choose_club_typ(lang) {
     }
 }
 
+document.getElementById("club-selector").addEventListener('touchend', function () {
+    choose_club_typ(language);
+}, false);
+
 document.getElementById("club-selector").addEventListener('click', function () {
     choose_club_typ(language);
 }, false);
 
-document.getElementById("club-selector").addEventListener('touchend', function () {
+document.getElementById("club-selector").on('touchstart', function() {
     choose_club_typ(language);
-}, false);
+});
 
 function create_club_part(parent, club_part, name_id, fold, items) {
     var parent_element = document.getElementById(parent);
@@ -660,7 +664,7 @@ function adjust_language(word_list){
                 w = "turquoise";
             }
             else if (word === "Griff"){
-                w = "Grip";
+                w = "Handle";
             }
             else if (word === "Korpus"){
                 w = "Body";
