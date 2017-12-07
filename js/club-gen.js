@@ -506,9 +506,10 @@ function create_club_part(parent, club_part, name_id, fold, items) {
     items.forEach(function (item) {
         var final_url = dir + fold + "/" + item;
         var image_string = '<img id="img-club-' + club_part + '" ' +
-            'class="club-pics center-block" ' +
+            'class="club-pics center-block unselectable" ' +
             'src="' + final_url + '" ' +
-            'draggable="false"/>';
+            'draggable="false"' +
+            'unselectable="on"/>';
         var slide = document.createElement("div");
         slide.className = "swiper-slide";
         slide.innerHTML = image_string;
