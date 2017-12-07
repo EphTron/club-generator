@@ -480,7 +480,7 @@ function choose_club_typ(lang) {
     }
 }
 
-document.getElementById("club-selector").addEventListener('touchend', function () {
+document.getElementById("club-selector").addEventListener('change', function () {
     choose_club_typ(language);
 }, false);
 
