@@ -384,7 +384,7 @@ function choose_club_typ(lang) {
                 "19655_Griff_Loop_gruen.gif",
                 "19658_Griff_Loop_pink.gif",
                 "19659_Griff_Loop_rot.gif",
-                "19656_Griff_Loop_tuerkis.gif,",
+                "19656_Griff_Loop_tuerkis.gif",
                 "19653_Griff_Loop_blau.gif",
                 "19652_Griff_Loop_weiß.gif"];
 
