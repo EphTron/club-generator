@@ -36,441 +36,419 @@ function choose_club_typ(lang) {
         if (selected_club === "Pirouette") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                // "18239_KnobRund_gruen.gif",
-                // "18240_KnobRund_orange.gif",
-                // "18238_KnobRund_blau.gif",
-                "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
-                "11709_KnobDelphin_weiß.gif",
                 "18118_KnobDelphin_orange.gif",
                 "18207_KnobDelphin_blau.gif",
                 "18208_KnobDelphin_gruen.gif",
                 "19635_KnobDelphin_rot.gif",
-                "19638_KnobDelphin_pink.gif"];
+                "19638_KnobDelphin_pink.gif",
+                "11709_KnobDelphin_weiß.gif",
+                "11707_KnobRund_weiß.gif"];
 
-            paths['grip_items'] = ["19236_GriffPiro_lila.gif",
-                "17269_GriffPiro_pink.gif",
-                "17886_GriffPiro_rot.gif",
-                "11803_GriffPiro_weiß.gif",
-                "17885_GriffPiro_gelb.gif",
+            paths['grip_items'] = ["15581_GriffPiro_orange.gif",
+                "17931_GriffPiro_blau.gif",
                 "15582_GriffPiro_gruen.gif",
+                "17886_GriffPiro_rot.gif",
+                "17269_GriffPiro_pink.gif",
+                "19236_GriffPiro_lila.gif",
+                "17885_GriffPiro_gelb.gif",
                 "11802_GriffPiro_silber.gif",
-                "15581_GriffPiro_orange.gif",
-                "17931_GriffPiro_blau.gif"];
+                "11803_GriffPiro_weiß.gif"];
 
-            paths['tape_items'] = ["11225_Tape_weiß.gif",
-                "11226_Tape_schwarz.gif",
-                "18956_Tape_gelb.gif",
-                "18957_Tape_pink.gif",
+            paths['tape_items'] = ["11226_Tape_schwarz.gif",
                 "18958_Tape_orange.gif",
-                "18959_Tape_gruen.gif",
                 "19438_Tape_blau.gif",
-                "19689_Tape_rot.gif"];
+                "18959_Tape_gruen.gif",
+                "19689_Tape_rot.gif",
+                "18957_Tape_pink.gif",
+                "18956_Tape_gelb.gif",
+                "11225_Tape_weiß.gif"];
 
-            paths['body_items'] = ["11071_KorpusKurz_weiß.gif",
+            paths['body_items'] = ["12677_KorpusKurz_orange.gif",
+                "11077_KorpusKurz_blau.gif",
+                "11075_KorpusKurz_gruen.gif",
                 "11072_KorpusKurz_rot.gif",
                 "11073_KorpusKurz_pink.gif",
-                "11074_KorpusKurz_gelb.gif",
-                "11075_KorpusKurz_gruen.gif",
                 "11076_KorpusKurz_lila.gif",
-                "11077_KorpusKurz_blau.gif",
-                "12677_KorpusKurz_orange.gif"];
+                "11074_KorpusKurz_gelb.gif",
+                "11071_KorpusKurz_weiß.gif"];
 
             paths['top_items'] = ["11715_TopClassic_schwarz.gif",
-                "11716_TopClassic_weiß.gif",
                 "18124_TopClassic_orange.gif",
                 "18248_TopClassic_blau.gif",
                 "18249_TopClassic_gruen.gif",
                 "19643_TopClassic_rot.gif",
-                "19644_TopClassic_pink.gif"];
+                "19644_TopClassic_pink.gif",
+                "11716_TopClassic_weiß.gif"];
 
             club_path = paths;
             create_club("piro");
         } else if (selected_club === "Pirouette Grip") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                // "18239_KnobRund_gruen.gif",
-                // "18240_KnobRund_orange.gif",
-                // "18238_KnobRund_blau.gif",
-                "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
-                "11709_KnobDelphin_weiß.gif",
                 "18118_KnobDelphin_orange.gif",
                 "18207_KnobDelphin_blau.gif",
                 "18208_KnobDelphin_gruen.gif",
                 "19635_KnobDelphin_rot.gif",
-                "19638_KnobDelphin_pink.gif"];
+                "19638_KnobDelphin_pink.gif",
+                "11709_KnobDelphin_weiß.gif",
+                "11707_KnobRund_weiß.gif"];
 
-            paths['grip_items'] = ["19236_GriffPiro_lila.gif",
-                "17269_GriffPiro_pink.gif",
-                "17886_GriffPiro_rot.gif",
-                "11803_GriffPiro_weiß.gif",
-                "17885_GriffPiro_gelb.gif",
+            paths['grip_items'] = ["15581_GriffPiro_orange.gif",
+                "17931_GriffPiro_blau.gif",
                 "15582_GriffPiro_gruen.gif",
+                "17886_GriffPiro_rot.gif",
+                "17269_GriffPiro_pink.gif",
+                "19236_GriffPiro_lila.gif",
+                "17885_GriffPiro_gelb.gif",
                 "11802_GriffPiro_silber.gif",
-                "15581_GriffPiro_orange.gif",
-                "17931_GriffPiro_blau.gif"];
+                "11803_GriffPiro_weiß.gif"];
 
-            paths['tape_items'] = ["11225_Tape_weiß.gif",
-                "11226_Tape_schwarz.gif",
-                "18956_Tape_gelb.gif",
-                "18957_Tape_pink.gif",
+            paths['tape_items'] = ["11226_Tape_schwarz.gif",
                 "18958_Tape_orange.gif",
-                "18959_Tape_gruen.gif",
                 "19438_Tape_blau.gif",
-                "19689_Tape_rot.gif"];
+                "18959_Tape_gruen.gif",
+                "19689_Tape_rot.gif",
+                "18957_Tape_pink.gif",
+                "18956_Tape_gelb.gif",
+                "11225_Tape_weiß.gif"];
 
-            paths['body_items'] = ["17701_KorpusGrip_weiß.gif",
-                "17784_KorpusGrip_orange.gif",
-                "17788_KorpusGrip_gruen.gif",
+            paths['body_items'] = ["17784_KorpusGrip_orange.gif",
                 "19151_KorpusGrip_blau.gif",
+                "17788_KorpusGrip_gruen.gif",
                 "19242_KorpusGrip_pink.gif",
-                "19717_KorpusGrip_tuerkis.gif"];
+                "19717_KorpusGrip_tuerkis.gif",
+                "17701_KorpusGrip_weiß.gif"];
 
             paths['top_items'] = ["11715_TopClassic_schwarz.gif",
-                "11716_TopClassic_weiß.gif",
                 "18124_TopClassic_orange.gif",
                 "18248_TopClassic_blau.gif",
                 "18249_TopClassic_gruen.gif",
                 "19643_TopClassic_rot.gif",
-                "19644_TopClassic_pink.gif"];
+                "19644_TopClassic_pink.gif",
+                "11716_TopClassic_weiß.gif"];
 
             club_path = paths;
             create_club("piro-grip");
         } else if (selected_club === "Classic Short") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                // "18239_KnobRund_gruen.gif",
-                // "18240_KnobRund_orange.gif",
-                // "18238_KnobRund_blau.gif",
-                "11707_KnobRund_weiß.gif",
+                "11482_KnobClassic_schwarz.gif",
+                "18120_KnobClassic_orange.gif",
                 "18209_KnobClassic_blau.gif",
                 "18210_KnobClassic_gruen.gif",
                 "19636_KnobClassic_rot.gif",
-                "19637_KnobClassic_pink.gif"];
+                "19637_KnobClassic_pink.gif",
+                "11484_KnobClassic_weiß.gif",
+                "11707_KnobRund_weiß.gif"];
 
-            paths['grip_items'] = ["19487_GriffClassic_lila.gif",
-                "18599_GriffClassic_pink.gif",
-                "18257_GriffClassic_rot.gif",
-                "11800_GriffClassic_weiß.gif",
-                "17779_GriffClassic_gelb.gif",
+            paths['grip_items'] = ["16015_GriffClassic_orange.gif",
+                "18147_GriffClassic_blau.gif",
                 "16014_GriffClassic_gruen.gif",
+                "18257_GriffClassic_rot.gif",
+                "18599_GriffClassic_pink.gif",
+                "19487_GriffClassic_lila.gif",
+                "17779_GriffClassic_gelb.gif",
                 "11799_GriffClassic_silber.gif",
-                "16015_GriffClassic_orange.gif",
-                "18147_GriffClassic_blau.gif"];
+                "11800_GriffClassic_weiß.gif"];
 
-            paths['tape_items'] = ["11225_Tape_weiß.gif",
-                "11226_Tape_schwarz.gif",
-                "18956_Tape_gelb.gif",
-                "18957_Tape_pink.gif",
+            paths['tape_items'] = ["11226_Tape_schwarz.gif",
                 "18958_Tape_orange.gif",
-                "18959_Tape_gruen.gif",
                 "19438_Tape_blau.gif",
-                "19689_Tape_rot.gif"];
+                "18959_Tape_gruen.gif",
+                "19689_Tape_rot.gif",
+                "18957_Tape_pink.gif",
+                "18956_Tape_gelb.gif",
+                "11225_Tape_weiß.gif"];
 
-            paths['body_items'] = ["11071_KorpusKurz_weiß.gif",
+            paths['body_items'] = ["12677_KorpusKurz_orange.gif",
+                "11077_KorpusKurz_blau.gif",
+                "11075_KorpusKurz_gruen.gif",
                 "11072_KorpusKurz_rot.gif",
                 "11073_KorpusKurz_pink.gif",
-                "11074_KorpusKurz_gelb.gif",
-                "11075_KorpusKurz_gruen.gif",
                 "11076_KorpusKurz_lila.gif",
-                "11077_KorpusKurz_blau.gif",
-                "12677_KorpusKurz_orange.gif"];
+                "11074_KorpusKurz_gelb.gif",
+                "11071_KorpusKurz_weiß.gif"];
 
             paths['top_items'] = ["11715_TopClassic_schwarz.gif",
-                "11716_TopClassic_weiß.gif",
                 "18124_TopClassic_orange.gif",
                 "18248_TopClassic_blau.gif",
                 "18249_TopClassic_gruen.gif",
                 "19643_TopClassic_rot.gif",
-                "19644_TopClassic_pink.gif"];
+                "19644_TopClassic_pink.gif",
+                "11716_TopClassic_weiß.gif"];
 
             club_path = paths;
             create_club("short");
         } else if (selected_club === "Classic Long") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                // "18239_KnobRund_gruen.gif",
-                // "18240_KnobRund_orange.gif",
-                // "18238_KnobRund_blau.gif",
-                "11707_KnobRund_weiß.gif",
+                "11482_KnobClassic_schwarz.gif",
+                "18120_KnobClassic_orange.gif",
                 "18209_KnobClassic_blau.gif",
                 "18210_KnobClassic_gruen.gif",
                 "19636_KnobClassic_rot.gif",
-                "19637_KnobClassic_pink.gif"];
+                "19637_KnobClassic_pink.gif",
+                "11484_KnobClassic_weiß.gif",
+                "11707_KnobRund_weiß.gif"];
 
-            paths['grip_items'] = ["19487_GriffClassic_lila.gif",
-                "18599_GriffClassic_pink.gif",
-                "18257_GriffClassic_rot.gif",
-                "11800_GriffClassic_weiß.gif",
-                "17779_GriffClassic_gelb.gif",
+            paths['grip_items'] = ["16015_GriffClassic_orange.gif",
+                "18147_GriffClassic_blau.gif",
                 "16014_GriffClassic_gruen.gif",
+                "18257_GriffClassic_rot.gif",
+                "18599_GriffClassic_pink.gif",
+                "19487_GriffClassic_lila.gif",
+                "17779_GriffClassic_gelb.gif",
                 "11799_GriffClassic_silber.gif",
-                "16015_GriffClassic_orange.gif",
-                "18147_GriffClassic_blau.gif"];
+                "11800_GriffClassic_weiß.gif"];
 
             paths['tape_items'] = ["11226_Tape_schwarz.gif",
-                "11225_Tape_weiß.gif",
-                "18956_Tape_gelb.gif",
-                "18957_Tape_pink.gif",
                 "18958_Tape_orange.gif",
-                "18959_Tape_gruen.gif",
                 "19438_Tape_blau.gif",
-                "19689_Tape_rot.gif"];
+                "18959_Tape_gruen.gif",
+                "19689_Tape_rot.gif",
+                "18957_Tape_pink.gif",
+                "18956_Tape_gelb.gif",
+                "11225_Tape_weiß.gif"];
 
-            paths['body_items'] = ["11062_KorpusLang_weiß.gif",
+            paths['body_items'] = ["12684_KorpusLang_orange.gif",
+                "11068_KorpusLang_blau.gif",
+                "11066_KorpusLang_gruen.gif",
                 "11063_KorpusLang_rot.gif",
                 "11064_KorpusLang_pink.gif",
-                "11065_KorpusLang_gelb.gif",
-                "11066_KorpusLang_gruen.gif",
                 "11067_KorpusLang_lila.gif",
-                "11068_KorpusLang_blau.gif",
-                "11070_KorpusLang_schwarz.gif",
-                "12684_KorpusLang_orange.gif"];
+                "11065_KorpusLang_gelb.gif",
+                "11062_KorpusLang_weiß.gif",
+                "11070_KorpusLang_schwarz.gif"];
 
             paths['top_items'] = ["11715_TopClassic_schwarz.gif",
-                "11716_TopClassic_weiß.gif",
                 "18124_TopClassic_orange.gif",
                 "18248_TopClassic_blau.gif",
                 "18249_TopClassic_gruen.gif",
                 "19643_TopClassic_rot.gif",
-                "19644_TopClassic_pink.gif"];
+                "19644_TopClassic_pink.gif",
+                "11716_TopClassic_weiß.gif"];
             club_path = paths;
             create_club("long");
         } else if (selected_club === "Mirage") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                // "18239_KnobRund_gruen.gif",
-                // "18240_KnobRund_orange.gif",
-                // "18238_KnobRund_blau.gif",
-                "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
-                "11709_KnobDelphin_weiß.gif",
                 "18118_KnobDelphin_orange.gif",
                 "18207_KnobDelphin_blau.gif",
                 "18208_KnobDelphin_gruen.gif",
                 "19635_KnobDelphin_rot.gif",
-                "19638_KnobDelphin_pink.gif"];
+                "19638_KnobDelphin_pink.gif",
+                "11709_KnobDelphin_weiß.gif",
+                "11707_KnobRund_weiß.gif"];
 
-            paths['grip_items'] = ["19236_GriffPiro_lila.gif",
-                "17269_GriffPiro_pink.gif",
-                "17886_GriffPiro_rot.gif",
-                "11803_GriffPiro_weiß.gif",
-                "17885_GriffPiro_gelb.gif",
+            paths['grip_items'] = ["15581_GriffPiro_orange.gif",
+                "17931_GriffPiro_blau.gif",
                 "15582_GriffPiro_gruen.gif",
+                "17886_GriffPiro_rot.gif",
+                "17269_GriffPiro_pink.gif",
+                "19236_GriffPiro_lila.gif",
+                "17885_GriffPiro_gelb.gif",
                 "11802_GriffPiro_silber.gif",
-                "15581_GriffPiro_orange.gif",
-                "17931_GriffPiro_blau.gif"];
+                "11803_GriffPiro_weiß.gif"];
 
             paths['tape_items'] = ["11226_Tape_schwarz.gif",
-                "11225_Tape_weiß.gif",
-                "18956_Tape_gelb.gif",
-                "18957_Tape_pink.gif",
                 "18958_Tape_orange.gif",
-                "18959_Tape_gruen.gif",
-                "18957_Tape_pink.gif",
                 "19438_Tape_blau.gif",
-                "19689_Tape_rot.gif"];
+                "18959_Tape_gruen.gif",
+                "19689_Tape_rot.gif",
+                "18957_Tape_pink.gif",
+                "18956_Tape_gelb.gif",
+                "11225_Tape_weiß.gif"];
 
-            paths['body_items'] = ["16888_KorpusMirage_rot.gif",
+            paths['body_items'] = ["16893_KorpusMirage_orange.gif",
+                "16892_KorpusMirage_blau.gif",
+                "16891_KorpusMirage_gruen.gif",
+                "16888_KorpusMirage_rot.gif",
                 "16889_KorpusMirage_pink.gif",
                 "16890_KorpusMirage_gelb.gif",
-                "16891_KorpusMirage_gruen.gif",
-                "16892_KorpusMirage_blau.gif",
-                "16887_KorpusMirage_weiß.gif",
-                "16893_KorpusMirage_orange.gif"];
+                "16887_KorpusMirage_weiß.gif"];
 
             paths['top_items'] = ["11715_TopClassic_schwarz.gif",
-                "11716_TopClassic_weiß.gif",
                 "18124_TopClassic_orange.gif",
                 "18248_TopClassic_blau.gif",
                 "18249_TopClassic_gruen.gif",
                 "19643_TopClassic_rot.gif",
-                "19644_TopClassic_pink.gif"];
+                "19644_TopClassic_pink.gif",
+                "11716_TopClassic_weiß.gif"];
 
             club_path = paths;
             create_club("mirage");
         } else if (selected_club === "Albatros") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                // "18239_KnobRund_gruen.gif",
-                // "18240_KnobRund_orange.gif",
-                // "18238_KnobRund_blau.gif",
-                "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
-                "11709_KnobDelphin_weiß.gif",
                 "18118_KnobDelphin_orange.gif",
                 "18207_KnobDelphin_blau.gif",
                 "18208_KnobDelphin_gruen.gif",
                 "19635_KnobDelphin_rot.gif",
-                "19638_KnobDelphin_pink.gif"];
+                "19638_KnobDelphin_pink.gif",
+                "11709_KnobDelphin_weiß.gif",
+                "11707_KnobRund_weiß.gif"];
 
-            paths['grip_items'] = ["19487_GriffClassic_lila.gif",
-                "18599_GriffClassic_pink.gif",
-                "18257_GriffClassic_rot.gif",
-                "11800_GriffClassic_weiß.gif",
-                "17779_GriffClassic_gelb.gif",
+            paths['grip_items'] = ["16015_GriffClassic_orange.gif",
+                "18147_GriffClassic_blau.gif",
                 "16014_GriffClassic_gruen.gif",
+                "18257_GriffClassic_rot.gif",
+                "18599_GriffClassic_pink.gif",
+                "19487_GriffClassic_lila.gif",
+                "17779_GriffClassic_gelb.gif",
                 "11799_GriffClassic_silber.gif",
-                "16015_GriffClassic_orange.gif",
-                "18147_GriffClassic_blau.gif"];
+                "11800_GriffClassic_weiß.gif"];
 
             paths['tape_items'] = ["11226_Tape_schwarz.gif",
-                "11225_Tape_weiß.gif",
-                "19689_Tape_rot.gif",
-                "18956_Tape_gelb.gif",
-                "18957_Tape_pink.gif",
                 "18958_Tape_orange.gif",
+                "19438_Tape_blau.gif",
                 "18959_Tape_gruen.gif",
-                "19438_Tape_blau.gif"];
+                "19689_Tape_rot.gif",
+                "18957_Tape_pink.gif",
+                "18956_Tape_gelb.gif",
+                "11225_Tape_weiß.gif"];
 
-            paths['body_items'] = ["11078_KorpusAlba_weiß.gif",
+            paths['body_items'] = ["12676_KorpusAlba_orange.gif",
+                "11084_KorpusAlba_blau.gif",
+                "11082_KorpusAlba_gruen.gif",
                 "11079_KorpusAlba_rot.gif",
                 "11080_KorpusAlba_pink.gif",
-                "11081_KorpusAlba_gelb.gif",
-                "11082_KorpusAlba_gruen.gif",
                 "11083_KorpusAlba_lila.gif",
-                "11084_KorpusAlba_blau.gif",
-                "12676_KorpusAlba_orange.gif"];
+                "11081_KorpusAlba_gelb.gif",
+                "11078_KorpusAlba_weiß.gif"];
 
             paths['top_items'] = ["11717_TopStand_schwarz.gif",
-                "11718_TopStand_weiß.gif",
                 "18122_TopStand_orange.gif",
                 "18250_TopStand_blau.gif",
                 "18251_TopStand_gruen.gif",
                 "19639_TopStand_rot.gif",
-                "19640_TopStand_pink.gif"];
+                "19640_TopStand_pink.gif",
+                "11718_TopStand_weiß.gif"];
 
             club_path = paths;
             create_club("alba");
         } else if (selected_club === "Delphin") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                // "18239_KnobRund_gruen.gif",
-                // "18240_KnobRund_orange.gif",
-                // "18238_KnobRund_blau.gif",
-                "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
-                "11709_KnobDelphin_weiß.gif",
                 "18118_KnobDelphin_orange.gif",
                 "18207_KnobDelphin_blau.gif",
                 "18208_KnobDelphin_gruen.gif",
                 "19635_KnobDelphin_rot.gif",
-                "19638_KnobDelphin_pink.gif"];
+                "19638_KnobDelphin_pink.gif",
+                "11709_KnobDelphin_weiß.gif",
+                "11707_KnobRund_weiß.gif"];
 
             paths['grip_items'] = ["11088_GriffDelphin_weiß.gif"];
 
             paths['tape_items'] = ["11091_DelphinRing_schwarz.gif",
                 "18864_DelphinRing_weiß.gif"];
 
-            paths['body_items'] = ["11062_KorpusLang_weiß.gif",
+            paths['body_items'] = ["12684_KorpusLang_orange.gif",
+                "11068_KorpusLang_blau.gif",
+                "11066_KorpusLang_gruen.gif",
                 "11063_KorpusLang_rot.gif",
                 "11064_KorpusLang_pink.gif",
-                "11065_KorpusLang_gelb.gif",
-                "11066_KorpusLang_gruen.gif",
                 "11067_KorpusLang_lila.gif",
-                "11068_KorpusLang_blau.gif",
-                "11070_KorpusLang_schwarz.gif",
-                "12684_KorpusLang_orange.gif"];
+                "11065_KorpusLang_gelb.gif",
+                "11062_KorpusLang_weiß.gif",
+                "11070_KorpusLang_schwarz.gif"];
 
             paths['top_items'] = ["11717_TopStand_schwarz.gif",
-                "11718_TopStand_weiß.gif",
                 "18122_TopStand_orange.gif",
                 "18250_TopStand_blau.gif",
                 "18251_TopStand_gruen.gif",
                 "19639_TopStand_rot.gif",
-                "19640_TopStand_pink.gif"];
+                "19640_TopStand_pink.gif",
+                "11718_TopStand_weiß.gif"];
 
             club_path = paths;
             create_club("delphin");
         } else if (selected_club === "Loop") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                // "18239_KnobRund_gruen.gif",
-                // "18240_KnobRund_orange.gif",
-                // "18238_KnobRund_blau.gif",
-                "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
-                "11709_KnobDelphin_weiß.gif",
                 "18118_KnobDelphin_orange.gif",
                 "18207_KnobDelphin_blau.gif",
                 "18208_KnobDelphin_gruen.gif",
                 "19635_KnobDelphin_rot.gif",
-                "19638_KnobDelphin_pink.gif"];
+                "19638_KnobDelphin_pink.gif",
+                "11709_KnobDelphin_weiß.gif",
+                "11707_KnobRund_weiß.gif"];
 
-            paths['grip_items'] = ["19656_Griff_Loop_tuerkis.gif",
-                "19652_Griff_Loop_weiß.gif",
-                "19653_Griff_Loop_blau.gif",
-                "19654_Griff_Loop_gelb.gif",
-                "19655_Griff_Loop_gruen.gif",
+            paths['grip_items'] = [
                 "19657_Griff_Loop_orange.gif",
+                "19653_Griff_Loop_blau.gif",
+                "19655_Griff_Loop_gruen.gif",
+                "19659_Griff_Loop_rot.gif",
                 "19658_Griff_Loop_pink.gif",
-                "19659_Griff_Loop_rot.gif"];
+                "19654_Griff_Loop_gelb.gif",
+                "19656_Griff_Loop_tuerkis.gif,",
+                "19652_Griff_Loop_weiß.gif"];
 
             paths['tape_items'] = ["11091_DelphinRing_schwarz.gif",
                 "18864_DelphinRing_weiß.gif"];
 
-            paths['body_items'] = ["11077_KorpusKurz_blau.gif",
-                "11071_KorpusKurz_weiß.gif",
+            paths['body_items'] = ["12677_KorpusKurz_orange.gif",
+                "11077_KorpusKurz_blau.gif",
+                "11075_KorpusKurz_gruen.gif",
                 "11072_KorpusKurz_rot.gif",
                 "11073_KorpusKurz_pink.gif",
-                "11074_KorpusKurz_gelb.gif",
-                "11075_KorpusKurz_gruen.gif",
                 "11076_KorpusKurz_lila.gif",
-                "19717_KorpusGrip_tuerkis.gif",
-                "12677_KorpusKurz_orange.gif"];
+                "11074_KorpusKurz_gelb.gif",
+                "11071_KorpusKurz_weiß.gif"];
 
             paths['top_items'] = ["11715_TopClassic_schwarz.gif",
-                "11716_TopClassic_weiß.gif",
                 "18124_TopClassic_orange.gif",
                 "18248_TopClassic_blau.gif",
                 "18249_TopClassic_gruen.gif",
                 "19643_TopClassic_rot.gif",
-                "19644_TopClassic_pink.gif"];
+                "19644_TopClassic_pink.gif",
+                "11716_TopClassic_weiß.gif"];
 
             club_path = paths;
             create_club("loop");
         } else if (selected_club === "Loop Grip") {
 
             paths['knob_items'] = ["12122_KnobRund_schwarz.gif",
-                "18239_KnobRund_gruen.gif",
-                "18240_KnobRund_orange.gif",
-                "18238_KnobRund_blau.gif",
-                "11707_KnobRund_weiß.gif",
                 "11708_KnobDelphin_schwarz.gif",
-                "11709_KnobDelphin_weiß.gif",
                 "18118_KnobDelphin_orange.gif",
                 "18207_KnobDelphin_blau.gif",
                 "18208_KnobDelphin_gruen.gif",
                 "19635_KnobDelphin_rot.gif",
-                "19638_KnobDelphin_pink.gif"];
+                "19638_KnobDelphin_pink.gif",
+                "11709_KnobDelphin_weiß.gif",
+                "11707_KnobRund_weiß.gif"];
 
-            paths['grip_items'] = ["19653_Griff_Loop_blau.gif",
-                "19652_Griff_Loop_weiß.gif",
-                "19654_Griff_Loop_gelb.gif",
+            paths['grip_items'] = ["19657_Griff_Loop_orange.gif",
+                "19653_Griff_Loop_blau.gif",
                 "19655_Griff_Loop_gruen.gif",
-                //"19656_Griff_Loop_tuerkis.gif",
-                "19657_Griff_Loop_orange.gif",
+                "19659_Griff_Loop_rot.gif",
                 "19658_Griff_Loop_pink.gif",
-                "19659_Griff_Loop_rot.gif"];
+                "19654_Griff_Loop_gelb.gif",
+                "19656_Griff_Loop_tuerkis.gif",
+                "19652_Griff_Loop_weiß.gif"];
 
             paths['tape_items'] = ["11091_DelphinRing_schwarz.gif",
                 "18864_DelphinRing_weiß.gif"];
 
-            paths['body_items'] = ["19151_KorpusGrip_blau.gif",
-                "17701_KorpusGrip_weiß.gif",
-                "17784_KorpusGrip_orange.gif",
+            paths['body_items'] = ["17784_KorpusGrip_orange.gif",
+                "19151_KorpusGrip_blau.gif",
                 "17788_KorpusGrip_gruen.gif",
                 "19242_KorpusGrip_pink.gif",
-                "19717_KorpusGrip_tuerkis.gif"];
+                "19717_KorpusGrip_tuerkis.gif",
+                "17701_KorpusGrip_weiß.gif"];
 
             paths['top_items'] = ["11715_TopClassic_schwarz.gif",
-                "11716_TopClassic_weiß.gif",
                 "18124_TopClassic_orange.gif",
                 "18248_TopClassic_blau.gif",
                 "18249_TopClassic_gruen.gif",
                 "19643_TopClassic_rot.gif",
-                "19644_TopClassic_pink.gif"];
+                "19644_TopClassic_pink.gif",
+                "11716_TopClassic_weiß.gif",];
 
             club_path = paths;
             create_club("loop-grip");
