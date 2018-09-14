@@ -657,6 +657,57 @@ function adjust_language(word_list){
             }
             adjusted_word_list.push(w);
         });
+    } else if (language === "nl"){
+        word_list.forEach(function (word){
+            var w = word;
+            w = w.replace(/([A-Z])/g, ' $1').trim();
+            if (word === "wei%C3%9F"){
+                w = "wit";
+            }
+            else if (word === "blau"){
+                w = "blauw";
+            }
+            else if (word === "gruen"){
+                w = "groen";
+            }
+            else if (word === "rot"){
+                w = "rood";
+            }
+            else if (word === "schwarz"){
+                w = "zwart";
+            }
+            else if (word === "gelb"){
+                w = "geel";
+            }
+            else if (word === "lila"){
+                w = "paars";
+            }
+            else if (word === "silber"){
+                w = "zilverkl.";
+            }
+            else if (word === "tuerkis"){
+                w = "turquoise";
+            }
+            else if (word === "Griff"){
+                w = "Handvat";
+            }
+            else if (word === "Korpus"){
+                w = "Body";
+            }
+            else if (word === "Rund"){
+                w = "Rond";
+            }
+            else if (word === "Kurz"){
+                w = "Short";
+            }
+            else if (word === "Lang"){
+                w = "Long";
+            }
+            else if (word === "Stand"){
+                w = "Std.";
+            }
+            adjusted_word_list.push(w);
+        });
     }
     return adjusted_word_list
 }

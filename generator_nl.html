@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Henrys Professional Clubs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Swiper Stylesheet -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/henrys-club-gen.css">
+
+    <link rel="stylesheet" href="css/henrys-club-config.css">
+</head>
+<body>
+<div id="club-generator">
+    <div class="header">
+        <div class="title-selection">
+            <div class="title">
+                <h3>Kies uw kegel</h3>
+            </div>
+            <div class="selection-header" id="choose_club">
+                <span>Soort kegel:</span>
+                <div id="selection-menu" class="dropdown">
+                    <select id="club-selector">
+                        <option>Pirouette</option>
+                        <option>Pirouette Grip</option>
+                        <option>Classic Short</option>
+                        <option>Classic Long</option>
+                        <option>Mirage</option>
+                        <option>Albatros</option>
+                        <option>Delphin</option>
+                        <option>Loop</option>
+                        <option>Loop Grip</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="logo" id="logo">
+            <a href="#" class="henrys-logo">
+            </a>
+        </div>
+    </div>
+
+    <div id="club-gen">
+        <div class="row" id="club-window"></div>
+    </div>
+
+    <div id="selected-parts">
+        <span class="selected-parts" id="selected-title">Onderdelen kegel:</span>
+        <span class="selected-parts" id="selected-knob">Knop</span>
+        <span class="selected-parts" id="selected-grip">Grip</span>
+        <span class="selected-parts" id="selected-tape">Tape</span>
+        <span class="selected-parts" id="selected-body">Body</span>
+        <span class="selected-parts" id="selected-top">Top</span>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="js/club-gen.js"></script>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- init first club-->
+<script>
+    choose_club_typ("nl");
+</script>
+</body>
+</html>
