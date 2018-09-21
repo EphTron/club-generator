@@ -3,6 +3,8 @@
 The _club-generator_ is a simple html website, which allows to configure the color and type of your personal Henrys club. 
 Try different color combinations of your club by simply swiping over your club parts.
 
+![club-generator example image](https://raw.githubusercontent.com/EphTron/club-generator/master/club-generator-example.png | width=45)
+
 ## Usage
 
 In order to use this _club-generator_ follow these steps:
